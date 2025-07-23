@@ -1,6 +1,7 @@
 # 🐙 Soft-Octopus-Sim
 
 **Soft-Octopus-Sim** is a soft robotics simulation built in MuJoCo, modeling a biologically inspired octopus with **8 flexible limbs**, each composed of **27 segments**. The robot is actuated via muscle-like tendons, and supports both visualization and randomized control behaviors.
+<img width="4442" height="1330" alt="image (1)" src="https://github.com/user-attachments/assets/7f762fe4-9ee4-4230-83ee-c69958766518" />
 
 ---
 
