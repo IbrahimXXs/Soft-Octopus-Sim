@@ -15,7 +15,7 @@ It is intended for researchers, hobbyists, or developers working on soft robotic
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 Soft-Octopus-Sim/
@@ -34,7 +34,7 @@ Soft-Octopus-Sim/
 └── .gitignore                  # Git exclusions
 ```
 
-## 🧰 Requirements
+## Requirements
 
 - Python 3.8+
 - [MuJoCo](https://mujoco.org/)
@@ -47,7 +47,7 @@ To install dependencies:
 pip install mujoco numpy
 
 
-## 🖥️ Usage
+## Usage
 
 ### 🔹 1. View the Octopus Model
 
@@ -73,7 +73,7 @@ This script performs the following actions:
 - Repeats the pattern with short pauses between activations
 - Demonstrates emergent movement patterns through random stimulation
 
-## 🧪 Model Description
+## Model Description
 
 | Component | Details |
 |-----------|---------|
@@ -85,7 +85,7 @@ This script performs the following actions:
 
 The simulation uses tendon-based control to replicate soft-bodied movement similar to that of a real octopus. Each limb can bend, twist, and contract independently, allowing for complex locomotive behaviors.
 
-## 🔧 Generator Scripts
+## Generator Scripts
 
 Located in the `Generator/` directory, these scripts are designed to:
 
@@ -94,7 +94,7 @@ Located in the `Generator/` directory, these scripts are designed to:
 - **Scale and customize** the octopus design parameters
 - **Useful for procedural scaling** or design changes without manual XML editing
 
-## 🧱 3D Assets
+## 3D Assets
 
 The `3D_OctV2/` folder contains `.stl` mesh files used for rendering the octopus limbs and body parts in MuJoCo. These assets provide:
 
@@ -102,7 +102,7 @@ The `3D_OctV2/` folder contains `.stl` mesh files used for rendering the octopus
 - Accurate collision geometry
 - Optimized mesh topology for real-time rendering
 
-## 🎯 Applications
+## Applications
 
 This simulation framework can be used for:
 
@@ -112,7 +112,7 @@ This simulation framework can be used for:
 - **Educational demonstrations** of soft-body physics
 - **Reinforcement learning** environments for robotic control
 
-## 📌 Future Improvements
+## Future Improvements
 
 - [ ] Integration with reinforcement learning frameworks (e.g., stable-baselines3)
 - [ ] More biologically accurate muscle modeling
@@ -121,7 +121,7 @@ This simulation framework can be used for:
 - [ ] Underwater dynamics and fluid interaction
 - [ ] Multi-octopus swarm simulation capabilities
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit pull requests, report bugs, or suggest new features.
 
@@ -131,11 +131,11 @@ Contributions are welcome! Please feel free to submit pull requests, report bugs
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is open-source under the MIT License, unless otherwise specified. See `LICENSE` file for details.
 
-## 📚 References
+## References
 
 - MuJoCo Physics Engine Documentation
 - Biological studies on octopus locomotion and muscle structure
