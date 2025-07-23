@@ -17,24 +17,22 @@ It is intended for researchers, hobbyists, or developers working on soft robotic
 
 ## 📁 Repository Structure
 
+```
 Soft-Octopus-Sim/
 │
-├── Final_OctV2_Viewer.py # Viewer script to visualize the octopus
-├── Random_Actuation.py # Periodic random actuation of tendons
+├── Final_OctV2_Viewer.py        # Viewer script to visualize the octopus
+├── Random_Actuation.py          # Periodic random actuation of tendons
 │
-├── Generator/ # Auto-build scripts for model generation/modification
-│ └── (Python/XML/etc.)
+├── Generator/                   # Auto-build scripts for model generation/modification
+│   └── (Python/XML/etc.)
 │
-├── 3D_OctV2/ # STL mesh files for 3D model geometry
-│ └── (Octopus limb and body components)
+├── 3D_OctV2/                   # STL mesh files for 3D model geometry
+│   └── (Octopus limb and body components)
 │
-├── Final_OctopusV2.xml # Main MuJoCo model file
-├── README.md # This file
-└── .gitignore # Git exclusions
-
-
-
----
+├── Final_OctopusV2.xml         # Main MuJoCo model file
+├── README.md                   # This file
+└── .gitignore                  # Git exclusions
+```
 
 ## 🧰 Requirements
 
