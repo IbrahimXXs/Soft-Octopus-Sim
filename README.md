@@ -34,10 +34,10 @@ Soft-Octopus-Sim/
 └── .gitignore                  # Git exclusions
 ```
 
-## Requirements
+##  Requirements
 
 - Python 3.8+
-- [MuJoCo](https://mujoco.org/)
+- [MuJoCo](https://mujoco.org/) physics engine
 - `mujoco` Python bindings
 - `mujoco_viewer` (`pip install mujoco` installs viewer utilities as of MuJoCo 2.3+)
 - `numpy`
@@ -45,6 +45,11 @@ Soft-Octopus-Sim/
 To install dependencies:
 ```bash
 pip install mujoco numpy
+```
+
+Or use the provided requirements file:
+```bash
+pip install -r requirements.txt
 
 
 ## Usage
