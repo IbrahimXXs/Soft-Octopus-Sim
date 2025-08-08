@@ -7,7 +7,7 @@
 
 
     <!-- Applies to all joints unless overridden -->
-    <joint damping="0.25"/>
+    <joint damping="0.35"/>
 
 
 	<default class="freej">
@@ -89,7 +89,7 @@
 
             <body name="segment_1_R1" pos="0 0 0.001" euler="0 0 0">
                 <geom type="mesh" mesh="segment1N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                <joint name="J1_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.462000000" />
+                <joint name="J1_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.462000000" damping="0.250000" />
                 
 
                 <site name="site1_S1_R1" pos="0.013190 0.007590 0.006000" size="0.001000 0.001000 0.001000"/>
@@ -101,7 +101,7 @@
 
                 <body name="segment_2_R1" pos="0 0 0.02306" euler="0 0 0">
                     <geom type="mesh" mesh="segment2N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                    <joint name="J2_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.429134572" />
+                    <joint name="J2_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.429134572" damping="0.230000" />
                     
 
                     <site name="site1_S2_R1" pos="0.012252 0.007050 0.005573" size="0.000929 0.000929 0.000929"/>
@@ -113,7 +113,7 @@
 
                     <body name="segment_3_R1" pos="0 0 0.02149" euler="0 0 0">
                         <geom type="mesh" mesh="segment3N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                        <joint name="J3_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.398607101" />
+                        <joint name="J3_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.398607101" damping="0.211600" />
                         
 
                         <site name="site1_S3_R1" pos="0.011380 0.006549 0.005177" size="0.000863 0.000863 0.000863"/>
@@ -125,7 +125,7 @@
 
                         <body name="segment_4_R1" pos="0 0 0.02003" euler="0 0 0">
                             <geom type="mesh" mesh="segment4N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                            <joint name="J4_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.370251272" />
+                            <joint name="J4_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.370251272" damping="0.194672" />
                             
 
                             <site name="site1_S4_R1" pos="0.010571 0.006083 0.004808" size="0.000801 0.000801 0.000801"/>
@@ -137,7 +137,7 @@
 
                             <body name="segment_5_R1" pos="0 0 0.01868" euler="0 0 0">
                                 <geom type="mesh" mesh="segment5N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                <joint name="J5_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.343912600" />
+                                <joint name="J5_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.343912600" damping="0.179098" />
                                 
 
                                 <site name="site1_S5_R1" pos="0.009819 0.005650 0.004466" size="0.000744 0.000744 0.000744"/>
@@ -149,7 +149,7 @@
 
                                 <body name="segment_6_R1" pos="0 0 0.01742" euler="0 0 0">
                                     <geom type="mesh" mesh="segment6N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                    <joint name="J6_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.319447589" />
+                                    <joint name="J6_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.319447589" damping="0.164770" />
                                     
 
                                     <site name="site1_S6_R1" pos="0.009120 0.005248 0.004149" size="0.000691 0.000691 0.000691"/>
@@ -161,7 +161,7 @@
 
                                     <body name="segment_7_R1" pos="0 0 0.01625" euler="0 0 0">
                                         <geom type="mesh" mesh="segment7N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                        <joint name="J7_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.296722953" />
+                                        <joint name="J7_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.296722953" damping="0.151589" />
                                         
 
                                         <site name="site1_S7_R1" pos="0.008471 0.004875 0.003854" size="0.000642 0.000642 0.000642"/>
@@ -173,7 +173,7 @@
 
                                         <body name="segment_8_R1" pos="0 0 0.01517" euler="0 0 0">
                                             <geom type="mesh" mesh="segment8N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                            <joint name="J8_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.275614886" />
+                                            <joint name="J8_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.275614886" damping="0.139462" />
                                             
 
                                             <site name="site1_S8_R1" pos="0.007869 0.004528 0.003579" size="0.000597 0.000597 0.000597"/>
@@ -185,7 +185,7 @@
 
                                             <body name="segment_9_R1" pos="0 0 0.01416" euler="0 0 0">
                                                 <geom type="mesh" mesh="segment9N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                <joint name="J9_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.256008390" />
+                                                <joint name="J9_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.256008390" damping="0.128305" />
                                                 
 
                                                 <site name="site1_S9_R1" pos="0.007309 0.004206 0.003325" size="0.000554 0.000554 0.000554"/>
@@ -197,7 +197,7 @@
 
                                                 <body name="segment_10_R1" pos="0 0 0.01322" euler="0 0 0">
                                                     <geom type="mesh" mesh="segment10N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                    <joint name="J10_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.237796647" />
+                                                    <joint name="J10_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.237796647" damping="0.118040" />
                                                     
 
                                                     <site name="site1_S10_R1" pos="0.006789 0.003907 0.003088" size="0.000515 0.000515 0.000515"/>
@@ -209,7 +209,7 @@
 
                                                     <body name="segment_11_R1" pos="0 0 0.01235" euler="0 0 0">
                                                         <geom type="mesh" mesh="segment11N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                        <joint name="J11_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.220880438" />
+                                                        <joint name="J11_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.220880438" damping="0.108597" />
                                                         
 
                                                         <site name="site1_S11_R1" pos="0.006306 0.003629 0.002869" size="0.000478 0.000478 0.000478"/>
@@ -221,7 +221,7 @@
 
                                                         <body name="segment_12_R1" pos="0 0 0.01155" euler="0 0 0">
                                                             <geom type="mesh" mesh="segment12N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                            <joint name="J12_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.205167602" />
+                                                            <joint name="J12_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.205167602" damping="0.099909" />
                                                             
 
                                                             <site name="site1_S12_R1" pos="0.005857 0.003371 0.002665" size="0.000444 0.000444 0.000444"/>
@@ -233,7 +233,7 @@
 
                                                             <body name="segment_13_R1" pos="0 0 0.01080" euler="0 0 0">
                                                                 <geom type="mesh" mesh="segment13N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                <joint name="J13_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.190572535" />
+                                                                <joint name="J13_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.190572535" damping="0.091917" />
                                                                 
 
                                                                 <site name="site1_S13_R1" pos="0.005441 0.003131 0.002475" size="0.000412 0.000412 0.000412"/>
@@ -245,7 +245,7 @@
 
                                                                 <body name="segment_14_R1" pos="0 0 0.01010" euler="0 0 0">
                                                                     <geom type="mesh" mesh="segment14N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                    <joint name="J14_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.177015721" />
+                                                                    <joint name="J14_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.177015721" damping="0.084563" />
                                                                     
 
                                                                     <site name="site1_S14_R1" pos="0.005054 0.002908 0.002299" size="0.000383 0.000383 0.000383"/>
@@ -257,7 +257,7 @@
 
                                                                     <body name="segment_15_R1" pos="0 0 0.00945" euler="0 0 0">
                                                                         <geom type="mesh" mesh="segment15N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                        <joint name="J15_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.164423302" />
+                                                                        <joint name="J15_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.164423302" damping="0.077798" />
                                                                         
 
                                                                         <site name="site1_S15_R1" pos="0.004694 0.002701 0.002135" size="0.000356 0.000356 0.000356"/>
@@ -269,7 +269,7 @@
 
                                                                         <body name="segment_16_R1" pos="0 0 0.00885" euler="0 0 0">
                                                                             <geom type="mesh" mesh="segment16N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                            <joint name="J16_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.152726674" />
+                                                                            <joint name="J16_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.152726674" damping="0.071574" />
                                                                             
 
                                                                             <site name="site1_S16_R1" pos="0.004360 0.002509 0.001983" size="0.000331 0.000331 0.000331"/>
@@ -281,7 +281,7 @@
 
                                                                             <body name="segment_17_R1" pos="0 0 0.00829" euler="0 0 0">
                                                                                 <geom type="mesh" mesh="segment17N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                <joint name="J17_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.141862112" />
+                                                                                <joint name="J17_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.141862112" damping="0.065848" />
                                                                                 
 
                                                                                 <site name="site1_S17_R1" pos="0.004050 0.002331 0.001842" size="0.000307 0.000307 0.000307"/>
@@ -293,7 +293,7 @@
 
                                                                                 <body name="segment_18_R1" pos="0 0 0.00777" euler="0 0 0">
                                                                                     <geom type="mesh" mesh="segment18N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                    <joint name="J18_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.131770426" />
+                                                                                    <joint name="J18_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.131770426" damping="0.060581" />
                                                                                     
 
                                                                                     <site name="site1_S18_R1" pos="0.003762 0.002165 0.001711" size="0.000285 0.000285 0.000285"/>
@@ -305,7 +305,7 @@
 
                                                                                     <body name="segment_19_R1" pos="0 0 0.00729" euler="0 0 0">
                                                                                         <geom type="mesh" mesh="segment19N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                        <joint name="J19_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.122396635" />
+                                                                                        <joint name="J19_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.122396635" damping="0.055734" />
                                                                                         
 
                                                                                         <site name="site1_S19_R1" pos="0.003494 0.002011 0.001590" size="0.000265 0.000265 0.000265"/>
@@ -317,7 +317,7 @@
 
                                                                                         <body name="segment_20_R1" pos="0 0 0.00684" euler="0 0 0">
                                                                                             <geom type="mesh" mesh="segment20N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                            <joint name="J20_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.113689670" />
+                                                                                            <joint name="J20_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.113689670" damping="0.051275" />
                                                                                             
 
                                                                                             <site name="site1_S20_R1" pos="0.003246 0.001868 0.001476" size="0.000246 0.000246 0.000246"/>
@@ -329,7 +329,7 @@
 
                                                                                             <body name="segment_21_R1" pos="0 0 0.00643" euler="0 0 0">
                                                                                                 <geom type="mesh" mesh="segment21N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                <joint name="J21_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.105602095" />
+                                                                                                <joint name="J21_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.105602095" damping="0.047173" />
                                                                                                 
 
                                                                                                 <site name="site1_S21_R1" pos="0.003015 0.001735 0.001371" size="0.000229 0.000229 0.000229"/>
@@ -341,7 +341,7 @@
 
                                                                                                 <body name="segment_22_R1" pos="0 0 0.00604" euler="0 0 0">
                                                                                                     <geom type="mesh" mesh="segment22N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                    <joint name="J22_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.098089848" />
+                                                                                                    <joint name="J22_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.098089848" damping="0.043399" />
                                                                                                     
 
                                                                                                     <site name="site1_S22_R1" pos="0.002800 0.001611 0.001274" size="0.000212 0.000212 0.000212"/>
@@ -353,7 +353,7 @@
 
                                                                                                     <body name="segment_23_R1" pos="0 0 0.00568" euler="0 0 0">
                                                                                                         <geom type="mesh" mesh="segment23N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                        <joint name="J23_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.091112002" />
+                                                                                                        <joint name="J23_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.091112002" damping="0.039928" />
                                                                                                         
 
                                                                                                         <site name="site1_S23_R1" pos="0.002601 0.001497 0.001183" size="0.000197 0.000197 0.000197"/>
@@ -365,7 +365,7 @@
 
                                                                                                         <body name="segment_24_R1" pos="0 0 0.00535" euler="0 0 0">
                                                                                                             <geom type="mesh" mesh="segment24N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                            <joint name="J24_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.084630541" />
+                                                                                                            <joint name="J24_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.084630541" damping="0.036733" />
                                                                                                             
 
                                                                                                             <site name="site1_S24_R1" pos="0.002416 0.001390 0.001099" size="0.000183 0.000183 0.000183"/>
@@ -377,7 +377,7 @@
 
                                                                                                             <body name="segment_25_R1" pos="0 0 0.00504" euler="0 0 0">
                                                                                                                 <geom type="mesh" mesh="segment25N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                                <joint name="J25_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.078610154" />
+                                                                                                                <joint name="J25_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.078610154" damping="0.033795" />
                                                                                                                 
 
                                                                                                                 <site name="site1_S25_R1" pos="0.002244 0.001291 0.001021" size="0.000170 0.000170 0.000170"/>
@@ -389,7 +389,7 @@
 
                                                                                                                 <body name="segment_26_R1" pos="0 0 0.00475" euler="0 0 0">
                                                                                                                     <geom type="mesh" mesh="segment26N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                                    <joint name="J26_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.073018040" />
+                                                                                                                    <joint name="J26_R1" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.073018040" damping="0.031091" />
                                                                                                                     
 
                                                                                                                     <site name="site1_S26_R1" pos="0.002085 0.001200 0.000948" size="0.000158 0.000158 0.000158"/>
@@ -458,7 +458,7 @@
 
             <body name="segment_1_R2" pos="0 0 0.00100" euler="0 0 0">
                 <geom type="mesh" mesh="segment1N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                <joint name="J1_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.462000000" />
+                <joint name="J1_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.462000000" damping="0.250000" />
                 
 
                 <site name="site1_S1_R2" pos="0.013190 0.007590 0.006000" size="0.001000 0.001000 0.001000"/>
@@ -470,7 +470,7 @@
 
                 <body name="segment_2_R2" pos="0 0 0.02306" euler="0 0 0">
                     <geom type="mesh" mesh="segment2N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                    <joint name="J2_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.429134572" />
+                    <joint name="J2_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.429134572" damping="0.230000" />
                     
 
                     <site name="site1_S2_R2" pos="0.012252 0.007050 0.005573" size="0.000929 0.000929 0.000929"/>
@@ -482,7 +482,7 @@
 
                     <body name="segment_3_R2" pos="0 0 0.02149" euler="0 0 0">
                         <geom type="mesh" mesh="segment3N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                        <joint name="J3_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.398607101" />
+                        <joint name="J3_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.398607101" damping="0.211600" />
                         
 
                         <site name="site1_S3_R2" pos="0.011380 0.006549 0.005177" size="0.000863 0.000863 0.000863"/>
@@ -494,7 +494,7 @@
 
                         <body name="segment_4_R2" pos="0 0 0.02003" euler="0 0 0">
                             <geom type="mesh" mesh="segment4N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                            <joint name="J4_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.370251272" />
+                            <joint name="J4_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.370251272" damping="0.194672" />
                             
 
                             <site name="site1_S4_R2" pos="0.010571 0.006083 0.004808" size="0.000801 0.000801 0.000801"/>
@@ -506,7 +506,7 @@
 
                             <body name="segment_5_R2" pos="0 0 0.01868" euler="0 0 0">
                                 <geom type="mesh" mesh="segment5N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                <joint name="J5_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.343912600" />
+                                <joint name="J5_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.343912600" damping="0.179098" />
                                 
 
                                 <site name="site1_S5_R2" pos="0.009819 0.005650 0.004466" size="0.000744 0.000744 0.000744"/>
@@ -518,7 +518,7 @@
 
                                 <body name="segment_6_R2" pos="0 0 0.01742" euler="0 0 0">
                                     <geom type="mesh" mesh="segment6N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                    <joint name="J6_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.319447589" />
+                                    <joint name="J6_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.319447589" damping="0.164770" />
                                     
 
                                     <site name="site1_S6_R2" pos="0.009120 0.005248 0.004149" size="0.000691 0.000691 0.000691"/>
@@ -530,7 +530,7 @@
 
                                     <body name="segment_7_R2" pos="0 0 0.01625" euler="0 0 0">
                                         <geom type="mesh" mesh="segment7N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                        <joint name="J7_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.296722953" />
+                                        <joint name="J7_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.296722953" damping="0.151589" />
                                         
 
                                         <site name="site1_S7_R2" pos="0.008471 0.004875 0.003854" size="0.000642 0.000642 0.000642"/>
@@ -542,7 +542,7 @@
 
                                         <body name="segment_8_R2" pos="0 0 0.01517" euler="0 0 0">
                                             <geom type="mesh" mesh="segment8N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                            <joint name="J8_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.275614886" />
+                                            <joint name="J8_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.275614886" damping="0.139462" />
                                             
 
                                             <site name="site1_S8_R2" pos="0.007869 0.004528 0.003579" size="0.000597 0.000597 0.000597"/>
@@ -554,7 +554,7 @@
 
                                             <body name="segment_9_R2" pos="0 0 0.01416" euler="0 0 0">
                                                 <geom type="mesh" mesh="segment9N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                <joint name="J9_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.256008390" />
+                                                <joint name="J9_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.256008390" damping="0.128305" />
                                                 
 
                                                 <site name="site1_S9_R2" pos="0.007309 0.004206 0.003325" size="0.000554 0.000554 0.000554"/>
@@ -566,7 +566,7 @@
 
                                                 <body name="segment_10_R2" pos="0 0 0.01322" euler="0 0 0">
                                                     <geom type="mesh" mesh="segment10N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                    <joint name="J10_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.237796647" />
+                                                    <joint name="J10_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.237796647" damping="0.118040" />
                                                     
 
                                                     <site name="site1_S10_R2" pos="0.006789 0.003907 0.003088" size="0.000515 0.000515 0.000515"/>
@@ -578,7 +578,7 @@
 
                                                     <body name="segment_11_R2" pos="0 0 0.01235" euler="0 0 0">
                                                         <geom type="mesh" mesh="segment11N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                        <joint name="J11_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.220880438" />
+                                                        <joint name="J11_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.220880438" damping="0.108597" />
                                                         
 
                                                         <site name="site1_S11_R2" pos="0.006306 0.003629 0.002869" size="0.000478 0.000478 0.000478"/>
@@ -590,7 +590,7 @@
 
                                                         <body name="segment_12_R2" pos="0 0 0.01155" euler="0 0 0">
                                                             <geom type="mesh" mesh="segment12N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                            <joint name="J12_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.205167602" />
+                                                            <joint name="J12_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.205167602" damping="0.099909" />
                                                             
 
                                                             <site name="site1_S12_R2" pos="0.005857 0.003371 0.002665" size="0.000444 0.000444 0.000444"/>
@@ -602,7 +602,7 @@
 
                                                             <body name="segment_13_R2" pos="0 0 0.01080" euler="0 0 0">
                                                                 <geom type="mesh" mesh="segment13N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                <joint name="J13_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.190572535" />
+                                                                <joint name="J13_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.190572535" damping="0.091917" />
                                                                 
 
                                                                 <site name="site1_S13_R2" pos="0.005441 0.003131 0.002475" size="0.000412 0.000412 0.000412"/>
@@ -614,7 +614,7 @@
 
                                                                 <body name="segment_14_R2" pos="0 0 0.01010" euler="0 0 0">
                                                                     <geom type="mesh" mesh="segment14N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                    <joint name="J14_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.177015721" />
+                                                                    <joint name="J14_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.177015721" damping="0.084563" />
                                                                     
 
                                                                     <site name="site1_S14_R2" pos="0.005054 0.002908 0.002299" size="0.000383 0.000383 0.000383"/>
@@ -626,7 +626,7 @@
 
                                                                     <body name="segment_15_R2" pos="0 0 0.00945" euler="0 0 0">
                                                                         <geom type="mesh" mesh="segment15N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                        <joint name="J15_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.164423302" />
+                                                                        <joint name="J15_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.164423302" damping="0.077798" />
                                                                         
 
                                                                         <site name="site1_S15_R2" pos="0.004694 0.002701 0.002135" size="0.000356 0.000356 0.000356"/>
@@ -638,7 +638,7 @@
 
                                                                         <body name="segment_16_R2" pos="0 0 0.00885" euler="0 0 0">
                                                                             <geom type="mesh" mesh="segment16N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                            <joint name="J16_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.152726674" />
+                                                                            <joint name="J16_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.152726674" damping="0.071574" />
                                                                             
 
                                                                             <site name="site1_S16_R2" pos="0.004360 0.002509 0.001983" size="0.000331 0.000331 0.000331"/>
@@ -650,7 +650,7 @@
 
                                                                             <body name="segment_17_R2" pos="0 0 0.00829" euler="0 0 0">
                                                                                 <geom type="mesh" mesh="segment17N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                <joint name="J17_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.141862112" />
+                                                                                <joint name="J17_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.141862112" damping="0.065848" />
                                                                                 
 
                                                                                 <site name="site1_S17_R2" pos="0.004050 0.002331 0.001842" size="0.000307 0.000307 0.000307"/>
@@ -662,7 +662,7 @@
 
                                                                                 <body name="segment_18_R2" pos="0 0 0.00777" euler="0 0 0">
                                                                                     <geom type="mesh" mesh="segment18N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                    <joint name="J18_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.131770426" />
+                                                                                    <joint name="J18_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.131770426" damping="0.060581" />
                                                                                     
 
                                                                                     <site name="site1_S18_R2" pos="0.003762 0.002165 0.001711" size="0.000285 0.000285 0.000285"/>
@@ -674,7 +674,7 @@
 
                                                                                     <body name="segment_19_R2" pos="0 0 0.00729" euler="0 0 0">
                                                                                         <geom type="mesh" mesh="segment19N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                        <joint name="J19_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.122396635" />
+                                                                                        <joint name="J19_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.122396635" damping="0.055734" />
                                                                                         
 
                                                                                         <site name="site1_S19_R2" pos="0.003494 0.002011 0.001590" size="0.000265 0.000265 0.000265"/>
@@ -686,7 +686,7 @@
 
                                                                                         <body name="segment_20_R2" pos="0 0 0.00684" euler="0 0 0">
                                                                                             <geom type="mesh" mesh="segment20N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                            <joint name="J20_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.113689670" />
+                                                                                            <joint name="J20_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.113689670" damping="0.051275" />
                                                                                             
 
                                                                                             <site name="site1_S20_R2" pos="0.003246 0.001868 0.001476" size="0.000246 0.000246 0.000246"/>
@@ -698,7 +698,7 @@
 
                                                                                             <body name="segment_21_R2" pos="0 0 0.00643" euler="0 0 0">
                                                                                                 <geom type="mesh" mesh="segment21N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                <joint name="J21_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.105602095" />
+                                                                                                <joint name="J21_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.105602095" damping="0.047173" />
                                                                                                 
 
                                                                                                 <site name="site1_S21_R2" pos="0.003015 0.001735 0.001371" size="0.000229 0.000229 0.000229"/>
@@ -710,7 +710,7 @@
 
                                                                                                 <body name="segment_22_R2" pos="0 0 0.00604" euler="0 0 0">
                                                                                                     <geom type="mesh" mesh="segment22N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                    <joint name="J22_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.098089848" />
+                                                                                                    <joint name="J22_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.098089848" damping="0.043399" />
                                                                                                     
 
                                                                                                     <site name="site1_S22_R2" pos="0.002800 0.001611 0.001274" size="0.000212 0.000212 0.000212"/>
@@ -722,7 +722,7 @@
 
                                                                                                     <body name="segment_23_R2" pos="0 0 0.00568" euler="0 0 0">
                                                                                                         <geom type="mesh" mesh="segment23N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                        <joint name="J23_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.091112002" />
+                                                                                                        <joint name="J23_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.091112002" damping="0.039928" />
                                                                                                         
 
                                                                                                         <site name="site1_S23_R2" pos="0.002601 0.001497 0.001183" size="0.000197 0.000197 0.000197"/>
@@ -734,7 +734,7 @@
 
                                                                                                         <body name="segment_24_R2" pos="0 0 0.00535" euler="0 0 0">
                                                                                                             <geom type="mesh" mesh="segment24N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                            <joint name="J24_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.084630541" />
+                                                                                                            <joint name="J24_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.084630541" damping="0.036733" />
                                                                                                             
 
                                                                                                             <site name="site1_S24_R2" pos="0.002416 0.001390 0.001099" size="0.000183 0.000183 0.000183"/>
@@ -746,7 +746,7 @@
 
                                                                                                             <body name="segment_25_R2" pos="0 0 0.00504" euler="0 0 0">
                                                                                                                 <geom type="mesh" mesh="segment25N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                                <joint name="J25_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.078610154" />
+                                                                                                                <joint name="J25_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.078610154" damping="0.033795" />
                                                                                                                 
 
                                                                                                                 <site name="site1_S25_R2" pos="0.002244 0.001291 0.001021" size="0.000170 0.000170 0.000170"/>
@@ -758,7 +758,7 @@
 
                                                                                                                 <body name="segment_26_R2" pos="0 0 0.00475" euler="0 0 0">
                                                                                                                     <geom type="mesh" mesh="segment26N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                                    <joint name="J26_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.073018040" />
+                                                                                                                    <joint name="J26_R2" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.073018040" damping="0.031091" />
                                                                                                                     
 
                                                                                                                     <site name="site1_S26_R2" pos="0.002085 0.001200 0.000948" size="0.000158 0.000158 0.000158"/>
@@ -817,7 +817,7 @@
 
             <body name="segment_1_R3" pos="0 0 0.00100" euler="0 0 0">
                 <geom type="mesh" mesh="segment1N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                <joint name="J1_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.462000000" />
+                <joint name="J1_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.462000000" damping="0.250000" />
                 
 
                 <site name="site1_S1_R3" pos="0.013190 0.007590 0.006000" size="0.001000 0.001000 0.001000"/>
@@ -829,7 +829,7 @@
 
                 <body name="segment_2_R3" pos="0 0 0.02306" euler="0 0 0">
                     <geom type="mesh" mesh="segment2N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                    <joint name="J2_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.429134572" />
+                    <joint name="J2_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.429134572" damping="0.230000" />
                     
 
                     <site name="site1_S2_R3" pos="0.012252 0.007050 0.005573" size="0.000929 0.000929 0.000929"/>
@@ -841,7 +841,7 @@
 
                     <body name="segment_3_R3" pos="0 0 0.02149" euler="0 0 0">
                         <geom type="mesh" mesh="segment3N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                        <joint name="J3_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.398607101" />
+                        <joint name="J3_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.398607101" damping="0.211600" />
                         
 
                         <site name="site1_S3_R3" pos="0.011380 0.006549 0.005177" size="0.000863 0.000863 0.000863"/>
@@ -853,7 +853,7 @@
 
                         <body name="segment_4_R3" pos="0 0 0.02003" euler="0 0 0">
                             <geom type="mesh" mesh="segment4N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                            <joint name="J4_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.370251272" />
+                            <joint name="J4_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.370251272" damping="0.194672" />
                             
 
                             <site name="site1_S4_R3" pos="0.010571 0.006083 0.004808" size="0.000801 0.000801 0.000801"/>
@@ -865,7 +865,7 @@
 
                             <body name="segment_5_R3" pos="0 0 0.01868" euler="0 0 0">
                                 <geom type="mesh" mesh="segment5N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                <joint name="J5_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.343912600" />
+                                <joint name="J5_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.343912600" damping="0.179098" />
                                 
 
                                 <site name="site1_S5_R3" pos="0.009819 0.005650 0.004466" size="0.000744 0.000744 0.000744"/>
@@ -877,7 +877,7 @@
 
                                 <body name="segment_6_R3" pos="0 0 0.01742" euler="0 0 0">
                                     <geom type="mesh" mesh="segment6N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                    <joint name="J6_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.319447589" />
+                                    <joint name="J6_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.319447589" damping="0.164770" />
                                     
 
                                     <site name="site1_S6_R3" pos="0.009120 0.005248 0.004149" size="0.000691 0.000691 0.000691"/>
@@ -889,7 +889,7 @@
 
                                     <body name="segment_7_R3" pos="0 0 0.01625" euler="0 0 0">
                                         <geom type="mesh" mesh="segment7N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                        <joint name="J7_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.296722953" />
+                                        <joint name="J7_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.296722953" damping="0.151589" />
                                         
 
                                         <site name="site1_S7_R3" pos="0.008471 0.004875 0.003854" size="0.000642 0.000642 0.000642"/>
@@ -901,7 +901,7 @@
 
                                         <body name="segment_8_R3" pos="0 0 0.01517" euler="0 0 0">
                                             <geom type="mesh" mesh="segment8N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                            <joint name="J8_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.275614886" />
+                                            <joint name="J8_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.275614886" damping="0.139462" />
                                             
 
                                             <site name="site1_S8_R3" pos="0.007869 0.004528 0.003579" size="0.000597 0.000597 0.000597"/>
@@ -913,7 +913,7 @@
 
                                             <body name="segment_9_R3" pos="0 0 0.01416" euler="0 0 0">
                                                 <geom type="mesh" mesh="segment9N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                <joint name="J9_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.256008390" />
+                                                <joint name="J9_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.256008390" damping="0.128305" />
                                                 
 
                                                 <site name="site1_S9_R3" pos="0.007309 0.004206 0.003325" size="0.000554 0.000554 0.000554"/>
@@ -925,7 +925,7 @@
 
                                                 <body name="segment_10_R3" pos="0 0 0.01322" euler="0 0 0">
                                                     <geom type="mesh" mesh="segment10N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                    <joint name="J10_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.237796647" />
+                                                    <joint name="J10_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.237796647" damping="0.118040" />
                                                     
 
                                                     <site name="site1_S10_R3" pos="0.006789 0.003907 0.003088" size="0.000515 0.000515 0.000515"/>
@@ -937,7 +937,7 @@
 
                                                     <body name="segment_11_R3" pos="0 0 0.01235" euler="0 0 0">
                                                         <geom type="mesh" mesh="segment11N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                        <joint name="J11_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.220880438" />
+                                                        <joint name="J11_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.220880438" damping="0.108597" />
                                                         
 
                                                         <site name="site1_S11_R3" pos="0.006306 0.003629 0.002869" size="0.000478 0.000478 0.000478"/>
@@ -949,7 +949,7 @@
 
                                                         <body name="segment_12_R3" pos="0 0 0.01155" euler="0 0 0">
                                                             <geom type="mesh" mesh="segment12N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                            <joint name="J12_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.205167602" />
+                                                            <joint name="J12_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.205167602" damping="0.099909" />
                                                             
 
                                                             <site name="site1_S12_R3" pos="0.005857 0.003371 0.002665" size="0.000444 0.000444 0.000444"/>
@@ -961,7 +961,7 @@
 
                                                             <body name="segment_13_R3" pos="0 0 0.01080" euler="0 0 0">
                                                                 <geom type="mesh" mesh="segment13N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                <joint name="J13_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.190572535" />
+                                                                <joint name="J13_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.190572535" damping="0.091917" />
                                                                 
 
                                                                 <site name="site1_S13_R3" pos="0.005441 0.003131 0.002475" size="0.000412 0.000412 0.000412"/>
@@ -973,7 +973,7 @@
 
                                                                 <body name="segment_14_R3" pos="0 0 0.01010" euler="0 0 0">
                                                                     <geom type="mesh" mesh="segment14N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                    <joint name="J14_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.177015721" />
+                                                                    <joint name="J14_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.177015721" damping="0.084563" />
                                                                     
 
                                                                     <site name="site1_S14_R3" pos="0.005054 0.002908 0.002299" size="0.000383 0.000383 0.000383"/>
@@ -985,7 +985,7 @@
 
                                                                     <body name="segment_15_R3" pos="0 0 0.00945" euler="0 0 0">
                                                                         <geom type="mesh" mesh="segment15N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                        <joint name="J15_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.164423302" />
+                                                                        <joint name="J15_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.164423302" damping="0.077798" />
                                                                         
 
                                                                         <site name="site1_S15_R3" pos="0.004694 0.002701 0.002135" size="0.000356 0.000356 0.000356"/>
@@ -997,7 +997,7 @@
 
                                                                         <body name="segment_16_R3" pos="0 0 0.00885" euler="0 0 0">
                                                                             <geom type="mesh" mesh="segment16N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                            <joint name="J16_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.152726674" />
+                                                                            <joint name="J16_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.152726674" damping="0.071574" />
                                                                             
 
                                                                             <site name="site1_S16_R3" pos="0.004360 0.002509 0.001983" size="0.000331 0.000331 0.000331"/>
@@ -1009,7 +1009,7 @@
 
                                                                             <body name="segment_17_R3" pos="0 0 0.00829" euler="0 0 0">
                                                                                 <geom type="mesh" mesh="segment17N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                <joint name="J17_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.141862112" />
+                                                                                <joint name="J17_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.141862112" damping="0.065848" />
                                                                                 
 
                                                                                 <site name="site1_S17_R3" pos="0.004050 0.002331 0.001842" size="0.000307 0.000307 0.000307"/>
@@ -1021,7 +1021,7 @@
 
                                                                                 <body name="segment_18_R3" pos="0 0 0.00777" euler="0 0 0">
                                                                                     <geom type="mesh" mesh="segment18N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                    <joint name="J18_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.131770426" />
+                                                                                    <joint name="J18_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.131770426" damping="0.060581" />
                                                                                     
 
                                                                                     <site name="site1_S18_R3" pos="0.003762 0.002165 0.001711" size="0.000285 0.000285 0.000285"/>
@@ -1033,7 +1033,7 @@
 
                                                                                     <body name="segment_19_R3" pos="0 0 0.00729" euler="0 0 0">
                                                                                         <geom type="mesh" mesh="segment19N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                        <joint name="J19_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.122396635" />
+                                                                                        <joint name="J19_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.122396635" damping="0.055734" />
                                                                                         
 
                                                                                         <site name="site1_S19_R3" pos="0.003494 0.002011 0.001590" size="0.000265 0.000265 0.000265"/>
@@ -1045,7 +1045,7 @@
 
                                                                                         <body name="segment_20_R3" pos="0 0 0.00684" euler="0 0 0">
                                                                                             <geom type="mesh" mesh="segment20N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                            <joint name="J20_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.113689670" />
+                                                                                            <joint name="J20_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.113689670" damping="0.051275" />
                                                                                             
 
                                                                                             <site name="site1_S20_R3" pos="0.003246 0.001868 0.001476" size="0.000246 0.000246 0.000246"/>
@@ -1057,7 +1057,7 @@
 
                                                                                             <body name="segment_21_R3" pos="0 0 0.00643" euler="0 0 0">
                                                                                                 <geom type="mesh" mesh="segment21N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                <joint name="J21_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.105602095" />
+                                                                                                <joint name="J21_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.105602095" damping="0.047173" />
                                                                                                 
 
                                                                                                 <site name="site1_S21_R3" pos="0.003015 0.001735 0.001371" size="0.000229 0.000229 0.000229"/>
@@ -1069,7 +1069,7 @@
 
                                                                                                 <body name="segment_22_R3" pos="0 0 0.00604" euler="0 0 0">
                                                                                                     <geom type="mesh" mesh="segment22N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                    <joint name="J22_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.098089848" />
+                                                                                                    <joint name="J22_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.098089848" damping="0.043399" />
                                                                                                     
 
                                                                                                     <site name="site1_S22_R3" pos="0.002800 0.001611 0.001274" size="0.000212 0.000212 0.000212"/>
@@ -1081,7 +1081,7 @@
 
                                                                                                     <body name="segment_23_R3" pos="0 0 0.00568" euler="0 0 0">
                                                                                                         <geom type="mesh" mesh="segment23N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                        <joint name="J23_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.091112002" />
+                                                                                                        <joint name="J23_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.091112002" damping="0.039928" />
                                                                                                         
 
                                                                                                         <site name="site1_S23_R3" pos="0.002601 0.001497 0.001183" size="0.000197 0.000197 0.000197"/>
@@ -1093,7 +1093,7 @@
 
                                                                                                         <body name="segment_24_R3" pos="0 0 0.00535" euler="0 0 0">
                                                                                                             <geom type="mesh" mesh="segment24N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                            <joint name="J24_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.084630541" />
+                                                                                                            <joint name="J24_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.084630541" damping="0.036733" />
                                                                                                             
 
                                                                                                             <site name="site1_S24_R3" pos="0.002416 0.001390 0.001099" size="0.000183 0.000183 0.000183"/>
@@ -1105,7 +1105,7 @@
 
                                                                                                             <body name="segment_25_R3" pos="0 0 0.00504" euler="0 0 0">
                                                                                                                 <geom type="mesh" mesh="segment25N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                                <joint name="J25_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.078610154" />
+                                                                                                                <joint name="J25_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.078610154" damping="0.033795" />
                                                                                                                 
 
                                                                                                                 <site name="site1_S25_R3" pos="0.002244 0.001291 0.001021" size="0.000170 0.000170 0.000170"/>
@@ -1117,7 +1117,7 @@
 
                                                                                                                 <body name="segment_26_R3" pos="0 0 0.00475" euler="0 0 0">
                                                                                                                     <geom type="mesh" mesh="segment26N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                                    <joint name="J26_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.073018040" />
+                                                                                                                    <joint name="J26_R3" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.073018040" damping="0.031091" />
                                                                                                                     
 
                                                                                                                     <site name="site1_S26_R3" pos="0.002085 0.001200 0.000948" size="0.000158 0.000158 0.000158"/>
@@ -1177,7 +1177,7 @@
 
             <body name="segment_1_R4" pos="0 0 0.00100" euler="0 0 0">
                 <geom type="mesh" mesh="segment1N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                <joint name="J1_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.462000000" />
+                <joint name="J1_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.462000000" damping="0.250000" />
                 
 
                 <site name="site1_S1_R4" pos="0.013190 0.007590 0.006000" size="0.001000 0.001000 0.001000"/>
@@ -1189,7 +1189,7 @@
 
                 <body name="segment_2_R4" pos="0 0 0.02306" euler="0 0 0">
                     <geom type="mesh" mesh="segment2N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                    <joint name="J2_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.429134572" />
+                    <joint name="J2_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.429134572" damping="0.230000" />
                     
 
                     <site name="site1_S2_R4" pos="0.012252 0.007050 0.005573" size="0.000929 0.000929 0.000929"/>
@@ -1201,7 +1201,7 @@
 
                     <body name="segment_3_R4" pos="0 0 0.02149" euler="0 0 0">
                         <geom type="mesh" mesh="segment3N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                        <joint name="J3_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.398607101" />
+                        <joint name="J3_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.398607101" damping="0.211600" />
                         
 
                         <site name="site1_S3_R4" pos="0.011380 0.006549 0.005177" size="0.000863 0.000863 0.000863"/>
@@ -1213,7 +1213,7 @@
 
                         <body name="segment_4_R4" pos="0 0 0.02003" euler="0 0 0">
                             <geom type="mesh" mesh="segment4N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                            <joint name="J4_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.370251272" />
+                            <joint name="J4_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.370251272" damping="0.194672" />
                             
 
                             <site name="site1_S4_R4" pos="0.010571 0.006083 0.004808" size="0.000801 0.000801 0.000801"/>
@@ -1225,7 +1225,7 @@
 
                             <body name="segment_5_R4" pos="0 0 0.01868" euler="0 0 0">
                                 <geom type="mesh" mesh="segment5N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                <joint name="J5_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.343912600" />
+                                <joint name="J5_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.343912600" damping="0.179098" />
                                 
 
                                 <site name="site1_S5_R4" pos="0.009819 0.005650 0.004466" size="0.000744 0.000744 0.000744"/>
@@ -1237,7 +1237,7 @@
 
                                 <body name="segment_6_R4" pos="0 0 0.01742" euler="0 0 0">
                                     <geom type="mesh" mesh="segment6N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                    <joint name="J6_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.319447589" />
+                                    <joint name="J6_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.319447589" damping="0.164770" />
                                     
 
                                     <site name="site1_S6_R4" pos="0.009120 0.005248 0.004149" size="0.000691 0.000691 0.000691"/>
@@ -1249,7 +1249,7 @@
 
                                     <body name="segment_7_R4" pos="0 0 0.01625" euler="0 0 0">
                                         <geom type="mesh" mesh="segment7N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                        <joint name="J7_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.296722953" />
+                                        <joint name="J7_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.296722953" damping="0.151589" />
                                         
 
                                         <site name="site1_S7_R4" pos="0.008471 0.004875 0.003854" size="0.000642 0.000642 0.000642"/>
@@ -1261,7 +1261,7 @@
 
                                         <body name="segment_8_R4" pos="0 0 0.01517" euler="0 0 0">
                                             <geom type="mesh" mesh="segment8N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                            <joint name="J8_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.275614886" />
+                                            <joint name="J8_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.275614886" damping="0.139462" />
                                             
 
                                             <site name="site1_S8_R4" pos="0.007869 0.004528 0.003579" size="0.000597 0.000597 0.000597"/>
@@ -1273,7 +1273,7 @@
 
                                             <body name="segment_9_R4" pos="0 0 0.01416" euler="0 0 0">
                                                 <geom type="mesh" mesh="segment9N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                <joint name="J9_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.256008390" />
+                                                <joint name="J9_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.256008390" damping="0.128305" />
                                                 
 
                                                 <site name="site1_S9_R4" pos="0.007309 0.004206 0.003325" size="0.000554 0.000554 0.000554"/>
@@ -1285,7 +1285,7 @@
 
                                                 <body name="segment_10_R4" pos="0 0 0.01322" euler="0 0 0">
                                                     <geom type="mesh" mesh="segment10N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                    <joint name="J10_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.237796647" />
+                                                    <joint name="J10_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.237796647" damping="0.118040" />
                                                     
 
                                                     <site name="site1_S10_R4" pos="0.006789 0.003907 0.003088" size="0.000515 0.000515 0.000515"/>
@@ -1297,7 +1297,7 @@
 
                                                     <body name="segment_11_R4" pos="0 0 0.01235" euler="0 0 0">
                                                         <geom type="mesh" mesh="segment11N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                        <joint name="J11_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.220880438" />
+                                                        <joint name="J11_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.220880438" damping="0.108597" />
                                                         
 
                                                         <site name="site1_S11_R4" pos="0.006306 0.003629 0.002869" size="0.000478 0.000478 0.000478"/>
@@ -1309,7 +1309,7 @@
 
                                                         <body name="segment_12_R4" pos="0 0 0.01155" euler="0 0 0">
                                                             <geom type="mesh" mesh="segment12N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                            <joint name="J12_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.205167602" />
+                                                            <joint name="J12_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.205167602" damping="0.099909" />
                                                             
 
                                                             <site name="site1_S12_R4" pos="0.005857 0.003371 0.002665" size="0.000444 0.000444 0.000444"/>
@@ -1321,7 +1321,7 @@
 
                                                             <body name="segment_13_R4" pos="0 0 0.01080" euler="0 0 0">
                                                                 <geom type="mesh" mesh="segment13N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                <joint name="J13_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.190572535" />
+                                                                <joint name="J13_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.190572535" damping="0.091917" />
                                                                 
 
                                                                 <site name="site1_S13_R4" pos="0.005441 0.003131 0.002475" size="0.000412 0.000412 0.000412"/>
@@ -1333,7 +1333,7 @@
 
                                                                 <body name="segment_14_R4" pos="0 0 0.01010" euler="0 0 0">
                                                                     <geom type="mesh" mesh="segment14N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                    <joint name="J14_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.177015721" />
+                                                                    <joint name="J14_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.177015721" damping="0.084563" />
                                                                     
 
                                                                     <site name="site1_S14_R4" pos="0.005054 0.002908 0.002299" size="0.000383 0.000383 0.000383"/>
@@ -1345,7 +1345,7 @@
 
                                                                     <body name="segment_15_R4" pos="0 0 0.00945" euler="0 0 0">
                                                                         <geom type="mesh" mesh="segment15N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                        <joint name="J15_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.164423302" />
+                                                                        <joint name="J15_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.164423302" damping="0.077798" />
                                                                         
 
                                                                         <site name="site1_S15_R4" pos="0.004694 0.002701 0.002135" size="0.000356 0.000356 0.000356"/>
@@ -1357,7 +1357,7 @@
 
                                                                         <body name="segment_16_R4" pos="0 0 0.00885" euler="0 0 0">
                                                                             <geom type="mesh" mesh="segment16N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                            <joint name="J16_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.152726674" />
+                                                                            <joint name="J16_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.152726674" damping="0.071574" />
                                                                             
 
                                                                             <site name="site1_S16_R4" pos="0.004360 0.002509 0.001983" size="0.000331 0.000331 0.000331"/>
@@ -1369,7 +1369,7 @@
 
                                                                             <body name="segment_17_R4" pos="0 0 0.00829" euler="0 0 0">
                                                                                 <geom type="mesh" mesh="segment17N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                <joint name="J17_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.141862112" />
+                                                                                <joint name="J17_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.141862112" damping="0.065848" />
                                                                                 
 
                                                                                 <site name="site1_S17_R4" pos="0.004050 0.002331 0.001842" size="0.000307 0.000307 0.000307"/>
@@ -1381,7 +1381,7 @@
 
                                                                                 <body name="segment_18_R4" pos="0 0 0.00777" euler="0 0 0">
                                                                                     <geom type="mesh" mesh="segment18N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                    <joint name="J18_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.131770426" />
+                                                                                    <joint name="J18_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.131770426" damping="0.060581" />
                                                                                     
 
                                                                                     <site name="site1_S18_R4" pos="0.003762 0.002165 0.001711" size="0.000285 0.000285 0.000285"/>
@@ -1393,7 +1393,7 @@
 
                                                                                     <body name="segment_19_R4" pos="0 0 0.00729" euler="0 0 0">
                                                                                         <geom type="mesh" mesh="segment19N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                        <joint name="J19_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.122396635" />
+                                                                                        <joint name="J19_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.122396635" damping="0.055734" />
                                                                                         
 
                                                                                         <site name="site1_S19_R4" pos="0.003494 0.002011 0.001590" size="0.000265 0.000265 0.000265"/>
@@ -1405,7 +1405,7 @@
 
                                                                                         <body name="segment_20_R4" pos="0 0 0.00684" euler="0 0 0">
                                                                                             <geom type="mesh" mesh="segment20N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                            <joint name="J20_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.113689670" />
+                                                                                            <joint name="J20_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.113689670" damping="0.051275" />
                                                                                             
 
                                                                                             <site name="site1_S20_R4" pos="0.003246 0.001868 0.001476" size="0.000246 0.000246 0.000246"/>
@@ -1417,7 +1417,7 @@
 
                                                                                             <body name="segment_21_R4" pos="0 0 0.00643" euler="0 0 0">
                                                                                                 <geom type="mesh" mesh="segment21N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                <joint name="J21_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.105602095" />
+                                                                                                <joint name="J21_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.105602095" damping="0.047173" />
                                                                                                 
 
                                                                                                 <site name="site1_S21_R4" pos="0.003015 0.001735 0.001371" size="0.000229 0.000229 0.000229"/>
@@ -1429,7 +1429,7 @@
 
                                                                                                 <body name="segment_22_R4" pos="0 0 0.00604" euler="0 0 0">
                                                                                                     <geom type="mesh" mesh="segment22N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                    <joint name="J22_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.098089848" />
+                                                                                                    <joint name="J22_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.098089848" damping="0.043399" />
                                                                                                     
 
                                                                                                     <site name="site1_S22_R4" pos="0.002800 0.001611 0.001274" size="0.000212 0.000212 0.000212"/>
@@ -1441,7 +1441,7 @@
 
                                                                                                     <body name="segment_23_R4" pos="0 0 0.00568" euler="0 0 0">
                                                                                                         <geom type="mesh" mesh="segment23N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                        <joint name="J23_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.091112002" />
+                                                                                                        <joint name="J23_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.091112002" damping="0.039928" />
                                                                                                         
 
                                                                                                         <site name="site1_S23_R4" pos="0.002601 0.001497 0.001183" size="0.000197 0.000197 0.000197"/>
@@ -1453,7 +1453,7 @@
 
                                                                                                         <body name="segment_24_R4" pos="0 0 0.00535" euler="0 0 0">
                                                                                                             <geom type="mesh" mesh="segment24N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                            <joint name="J24_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.084630541" />
+                                                                                                            <joint name="J24_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.084630541" damping="0.036733" />
                                                                                                             
 
                                                                                                             <site name="site1_S24_R4" pos="0.002416 0.001390 0.001099" size="0.000183 0.000183 0.000183"/>
@@ -1465,7 +1465,7 @@
 
                                                                                                             <body name="segment_25_R4" pos="0 0 0.00504" euler="0 0 0">
                                                                                                                 <geom type="mesh" mesh="segment25N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                                <joint name="J25_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.078610154" />
+                                                                                                                <joint name="J25_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.078610154" damping="0.033795" />
                                                                                                                 
 
                                                                                                                 <site name="site1_S25_R4" pos="0.002244 0.001291 0.001021" size="0.000170 0.000170 0.000170"/>
@@ -1477,7 +1477,7 @@
 
                                                                                                                 <body name="segment_26_R4" pos="0 0 0.00475" euler="0 0 0">
                                                                                                                     <geom type="mesh" mesh="segment26N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                                    <joint name="J26_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.073018040" />
+                                                                                                                    <joint name="J26_R4" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.073018040" damping="0.031091" />
                                                                                                                     
 
                                                                                                                     <site name="site1_S26_R4" pos="0.002085 0.001200 0.000948" size="0.000158 0.000158 0.000158"/>
@@ -1536,7 +1536,7 @@
 
             <body name="segment_1_R5" pos="0 0 0.00100" euler="0 0 0">
                 <geom type="mesh" mesh="segment1N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                <joint name="J1_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.462000000" />
+                <joint name="J1_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.462000000" damping="0.250000" />
                 
 
                 <site name="site1_S1_R5" pos="0.013190 0.007590 0.006000" size="0.001000 0.001000 0.001000"/>
@@ -1548,7 +1548,7 @@
 
                 <body name="segment_2_R5" pos="0 0 0.02306" euler="0 0 0">
                     <geom type="mesh" mesh="segment2N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                    <joint name="J2_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.429134572" />
+                    <joint name="J2_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.429134572" damping="0.230000" />
                     
 
                     <site name="site1_S2_R5" pos="0.012252 0.007050 0.005573" size="0.000929 0.000929 0.000929"/>
@@ -1560,7 +1560,7 @@
 
                     <body name="segment_3_R5" pos="0 0 0.02149" euler="0 0 0">
                         <geom type="mesh" mesh="segment3N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                        <joint name="J3_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.398607101" />
+                        <joint name="J3_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.398607101" damping="0.211600" />
                         
 
                         <site name="site1_S3_R5" pos="0.011380 0.006549 0.005177" size="0.000863 0.000863 0.000863"/>
@@ -1572,7 +1572,7 @@
 
                         <body name="segment_4_R5" pos="0 0 0.02003" euler="0 0 0">
                             <geom type="mesh" mesh="segment4N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                            <joint name="J4_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.370251272" />
+                            <joint name="J4_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.370251272" damping="0.194672" />
                             
 
                             <site name="site1_S4_R5" pos="0.010571 0.006083 0.004808" size="0.000801 0.000801 0.000801"/>
@@ -1584,7 +1584,7 @@
 
                             <body name="segment_5_R5" pos="0 0 0.01868" euler="0 0 0">
                                 <geom type="mesh" mesh="segment5N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                <joint name="J5_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.343912600" />
+                                <joint name="J5_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.343912600" damping="0.179098" />
                                 
 
                                 <site name="site1_S5_R5" pos="0.009819 0.005650 0.004466" size="0.000744 0.000744 0.000744"/>
@@ -1596,7 +1596,7 @@
 
                                 <body name="segment_6_R5" pos="0 0 0.01742" euler="0 0 0">
                                     <geom type="mesh" mesh="segment6N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                    <joint name="J6_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.319447589" />
+                                    <joint name="J6_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.319447589" damping="0.164770" />
                                     
 
                                     <site name="site1_S6_R5" pos="0.009120 0.005248 0.004149" size="0.000691 0.000691 0.000691"/>
@@ -1608,7 +1608,7 @@
 
                                     <body name="segment_7_R5" pos="0 0 0.01625" euler="0 0 0">
                                         <geom type="mesh" mesh="segment7N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                        <joint name="J7_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.296722953" />
+                                        <joint name="J7_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.296722953" damping="0.151589" />
                                         
 
                                         <site name="site1_S7_R5" pos="0.008471 0.004875 0.003854" size="0.000642 0.000642 0.000642"/>
@@ -1620,7 +1620,7 @@
 
                                         <body name="segment_8_R5" pos="0 0 0.01517" euler="0 0 0">
                                             <geom type="mesh" mesh="segment8N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                            <joint name="J8_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.275614886" />
+                                            <joint name="J8_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.275614886" damping="0.139462" />
                                             
 
                                             <site name="site1_S8_R5" pos="0.007869 0.004528 0.003579" size="0.000597 0.000597 0.000597"/>
@@ -1632,7 +1632,7 @@
 
                                             <body name="segment_9_R5" pos="0 0 0.01416" euler="0 0 0">
                                                 <geom type="mesh" mesh="segment9N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                <joint name="J9_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.256008390" />
+                                                <joint name="J9_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.256008390" damping="0.128305" />
                                                 
 
                                                 <site name="site1_S9_R5" pos="0.007309 0.004206 0.003325" size="0.000554 0.000554 0.000554"/>
@@ -1644,7 +1644,7 @@
 
                                                 <body name="segment_10_R5" pos="0 0 0.01322" euler="0 0 0">
                                                     <geom type="mesh" mesh="segment10N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                    <joint name="J10_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.237796647" />
+                                                    <joint name="J10_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.237796647" damping="0.118040" />
                                                     
 
                                                     <site name="site1_S10_R5" pos="0.006789 0.003907 0.003088" size="0.000515 0.000515 0.000515"/>
@@ -1656,7 +1656,7 @@
 
                                                     <body name="segment_11_R5" pos="0 0 0.01235" euler="0 0 0">
                                                         <geom type="mesh" mesh="segment11N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                        <joint name="J11_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.220880438" />
+                                                        <joint name="J11_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.220880438" damping="0.108597" />
                                                         
 
                                                         <site name="site1_S11_R5" pos="0.006306 0.003629 0.002869" size="0.000478 0.000478 0.000478"/>
@@ -1668,7 +1668,7 @@
 
                                                         <body name="segment_12_R5" pos="0 0 0.01155" euler="0 0 0">
                                                             <geom type="mesh" mesh="segment12N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                            <joint name="J12_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.205167602" />
+                                                            <joint name="J12_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.205167602" damping="0.099909" />
                                                             
 
                                                             <site name="site1_S12_R5" pos="0.005857 0.003371 0.002665" size="0.000444 0.000444 0.000444"/>
@@ -1680,7 +1680,7 @@
 
                                                             <body name="segment_13_R5" pos="0 0 0.01080" euler="0 0 0">
                                                                 <geom type="mesh" mesh="segment13N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                <joint name="J13_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.190572535" />
+                                                                <joint name="J13_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.190572535" damping="0.091917" />
                                                                 
 
                                                                 <site name="site1_S13_R5" pos="0.005441 0.003131 0.002475" size="0.000412 0.000412 0.000412"/>
@@ -1692,7 +1692,7 @@
 
                                                                 <body name="segment_14_R5" pos="0 0 0.01010" euler="0 0 0">
                                                                     <geom type="mesh" mesh="segment14N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                    <joint name="J14_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.177015721" />
+                                                                    <joint name="J14_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.177015721" damping="0.084563" />
                                                                     
 
                                                                     <site name="site1_S14_R5" pos="0.005054 0.002908 0.002299" size="0.000383 0.000383 0.000383"/>
@@ -1704,7 +1704,7 @@
 
                                                                     <body name="segment_15_R5" pos="0 0 0.00945" euler="0 0 0">
                                                                         <geom type="mesh" mesh="segment15N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                        <joint name="J15_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.164423302" />
+                                                                        <joint name="J15_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.164423302" damping="0.077798" />
                                                                         
 
                                                                         <site name="site1_S15_R5" pos="0.004694 0.002701 0.002135" size="0.000356 0.000356 0.000356"/>
@@ -1716,7 +1716,7 @@
 
                                                                         <body name="segment_16_R5" pos="0 0 0.00885" euler="0 0 0">
                                                                             <geom type="mesh" mesh="segment16N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                            <joint name="J16_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.152726674" />
+                                                                            <joint name="J16_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.152726674" damping="0.071574" />
                                                                             
 
                                                                             <site name="site1_S16_R5" pos="0.004360 0.002509 0.001983" size="0.000331 0.000331 0.000331"/>
@@ -1728,7 +1728,7 @@
 
                                                                             <body name="segment_17_R5" pos="0 0 0.00829" euler="0 0 0">
                                                                                 <geom type="mesh" mesh="segment17N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                <joint name="J17_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.141862112" />
+                                                                                <joint name="J17_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.141862112" damping="0.065848" />
                                                                                 
 
                                                                                 <site name="site1_S17_R5" pos="0.004050 0.002331 0.001842" size="0.000307 0.000307 0.000307"/>
@@ -1740,7 +1740,7 @@
 
                                                                                 <body name="segment_18_R5" pos="0 0 0.00777" euler="0 0 0">
                                                                                     <geom type="mesh" mesh="segment18N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                    <joint name="J18_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.131770426" />
+                                                                                    <joint name="J18_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.131770426" damping="0.060581" />
                                                                                     
 
                                                                                     <site name="site1_S18_R5" pos="0.003762 0.002165 0.001711" size="0.000285 0.000285 0.000285"/>
@@ -1752,7 +1752,7 @@
 
                                                                                     <body name="segment_19_R5" pos="0 0 0.00729" euler="0 0 0">
                                                                                         <geom type="mesh" mesh="segment19N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                        <joint name="J19_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.122396635" />
+                                                                                        <joint name="J19_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.122396635" damping="0.055734" />
                                                                                         
 
                                                                                         <site name="site1_S19_R5" pos="0.003494 0.002011 0.001590" size="0.000265 0.000265 0.000265"/>
@@ -1764,7 +1764,7 @@
 
                                                                                         <body name="segment_20_R5" pos="0 0 0.00684" euler="0 0 0">
                                                                                             <geom type="mesh" mesh="segment20N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                            <joint name="J20_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.113689670" />
+                                                                                            <joint name="J20_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.113689670" damping="0.051275" />
                                                                                             
 
                                                                                             <site name="site1_S20_R5" pos="0.003246 0.001868 0.001476" size="0.000246 0.000246 0.000246"/>
@@ -1776,7 +1776,7 @@
 
                                                                                             <body name="segment_21_R5" pos="0 0 0.00643" euler="0 0 0">
                                                                                                 <geom type="mesh" mesh="segment21N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                <joint name="J21_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.105602095" />
+                                                                                                <joint name="J21_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.105602095" damping="0.047173" />
                                                                                                 
 
                                                                                                 <site name="site1_S21_R5" pos="0.003015 0.001735 0.001371" size="0.000229 0.000229 0.000229"/>
@@ -1788,7 +1788,7 @@
 
                                                                                                 <body name="segment_22_R5" pos="0 0 0.00604" euler="0 0 0">
                                                                                                     <geom type="mesh" mesh="segment22N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                    <joint name="J22_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.098089848" />
+                                                                                                    <joint name="J22_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.098089848" damping="0.043399" />
                                                                                                     
 
                                                                                                     <site name="site1_S22_R5" pos="0.002800 0.001611 0.001274" size="0.000212 0.000212 0.000212"/>
@@ -1800,7 +1800,7 @@
 
                                                                                                     <body name="segment_23_R5" pos="0 0 0.00568" euler="0 0 0">
                                                                                                         <geom type="mesh" mesh="segment23N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                        <joint name="J23_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.091112002" />
+                                                                                                        <joint name="J23_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.091112002" damping="0.039928" />
                                                                                                         
 
                                                                                                         <site name="site1_S23_R5" pos="0.002601 0.001497 0.001183" size="0.000197 0.000197 0.000197"/>
@@ -1812,7 +1812,7 @@
 
                                                                                                         <body name="segment_24_R5" pos="0 0 0.00535" euler="0 0 0">
                                                                                                             <geom type="mesh" mesh="segment24N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                            <joint name="J24_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.084630541" />
+                                                                                                            <joint name="J24_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.084630541" damping="0.036733" />
                                                                                                             
 
                                                                                                             <site name="site1_S24_R5" pos="0.002416 0.001390 0.001099" size="0.000183 0.000183 0.000183"/>
@@ -1824,7 +1824,7 @@
 
                                                                                                             <body name="segment_25_R5" pos="0 0 0.00504" euler="0 0 0">
                                                                                                                 <geom type="mesh" mesh="segment25N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                                <joint name="J25_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.078610154" />
+                                                                                                                <joint name="J25_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.078610154" damping="0.033795" />
                                                                                                                 
 
                                                                                                                 <site name="site1_S25_R5" pos="0.002244 0.001291 0.001021" size="0.000170 0.000170 0.000170"/>
@@ -1836,7 +1836,7 @@
 
                                                                                                                 <body name="segment_26_R5" pos="0 0 0.00475" euler="0 0 0">
                                                                                                                     <geom type="mesh" mesh="segment26N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                                    <joint name="J26_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.073018040" />
+                                                                                                                    <joint name="J26_R5" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.073018040" damping="0.031091" />
                                                                                                                     
 
                                                                                                                     <site name="site1_S26_R5" pos="0.002085 0.001200 0.000948" size="0.000158 0.000158 0.000158"/>
@@ -1901,7 +1901,7 @@
 
             <body name="segment_1_R6" pos="0 0 0.00100" euler="0 0 0">
                 <geom type="mesh" mesh="segment1N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                <joint name="J1_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.462000000" />
+                <joint name="J1_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.462000000" damping="0.250000" />
                 
 
                 <site name="site1_S1_R6" pos="0.013190 0.007590 0.006000" size="0.001000 0.001000 0.001000"/>
@@ -1913,7 +1913,7 @@
 
                 <body name="segment_2_R6" pos="0 0 0.02306" euler="0 0 0">
                     <geom type="mesh" mesh="segment2N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                    <joint name="J2_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.429134572" />
+                    <joint name="J2_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.429134572" damping="0.230000" />
                     
 
                     <site name="site1_S2_R6" pos="0.012252 0.007050 0.005573" size="0.000929 0.000929 0.000929"/>
@@ -1925,7 +1925,7 @@
 
                     <body name="segment_3_R6" pos="0 0 0.02149" euler="0 0 0">
                         <geom type="mesh" mesh="segment3N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                        <joint name="J3_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.398607101" />
+                        <joint name="J3_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.398607101" damping="0.211600" />
                         
 
                         <site name="site1_S3_R6" pos="0.011380 0.006549 0.005177" size="0.000863 0.000863 0.000863"/>
@@ -1937,7 +1937,7 @@
 
                         <body name="segment_4_R6" pos="0 0 0.02003" euler="0 0 0">
                             <geom type="mesh" mesh="segment4N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                            <joint name="J4_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.370251272" />
+                            <joint name="J4_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.370251272" damping="0.194672" />
                             
 
                             <site name="site1_S4_R6" pos="0.010571 0.006083 0.004808" size="0.000801 0.000801 0.000801"/>
@@ -1949,7 +1949,7 @@
 
                             <body name="segment_5_R6" pos="0 0 0.01868" euler="0 0 0">
                                 <geom type="mesh" mesh="segment5N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                <joint name="J5_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.343912600" />
+                                <joint name="J5_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.343912600" damping="0.179098" />
                                 
 
                                 <site name="site1_S5_R6" pos="0.009819 0.005650 0.004466" size="0.000744 0.000744 0.000744"/>
@@ -1961,7 +1961,7 @@
 
                                 <body name="segment_6_R6" pos="0 0 0.01742" euler="0 0 0">
                                     <geom type="mesh" mesh="segment6N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                    <joint name="J6_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.319447589" />
+                                    <joint name="J6_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.319447589" damping="0.164770" />
                                     
 
                                     <site name="site1_S6_R6" pos="0.009120 0.005248 0.004149" size="0.000691 0.000691 0.000691"/>
@@ -1973,7 +1973,7 @@
 
                                     <body name="segment_7_R6" pos="0 0 0.01625" euler="0 0 0">
                                         <geom type="mesh" mesh="segment7N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                        <joint name="J7_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.296722953" />
+                                        <joint name="J7_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.296722953" damping="0.151589" />
                                         
 
                                         <site name="site1_S7_R6" pos="0.008471 0.004875 0.003854" size="0.000642 0.000642 0.000642"/>
@@ -1985,7 +1985,7 @@
 
                                         <body name="segment_8_R6" pos="0 0 0.01517" euler="0 0 0">
                                             <geom type="mesh" mesh="segment8N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                            <joint name="J8_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.275614886" />
+                                            <joint name="J8_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.275614886" damping="0.139462" />
                                             
 
                                             <site name="site1_S8_R6" pos="0.007869 0.004528 0.003579" size="0.000597 0.000597 0.000597"/>
@@ -1997,7 +1997,7 @@
 
                                             <body name="segment_9_R6" pos="0 0 0.01416" euler="0 0 0">
                                                 <geom type="mesh" mesh="segment9N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                <joint name="J9_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.256008390" />
+                                                <joint name="J9_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.256008390" damping="0.128305" />
                                                 
 
                                                 <site name="site1_S9_R6" pos="0.007309 0.004206 0.003325" size="0.000554 0.000554 0.000554"/>
@@ -2009,7 +2009,7 @@
 
                                                 <body name="segment_10_R6" pos="0 0 0.01322" euler="0 0 0">
                                                     <geom type="mesh" mesh="segment10N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                    <joint name="J10_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.237796647" />
+                                                    <joint name="J10_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.237796647" damping="0.118040" />
                                                     
 
                                                     <site name="site1_S10_R6" pos="0.006789 0.003907 0.003088" size="0.000515 0.000515 0.000515"/>
@@ -2021,7 +2021,7 @@
 
                                                     <body name="segment_11_R6" pos="0 0 0.01235" euler="0 0 0">
                                                         <geom type="mesh" mesh="segment11N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                        <joint name="J11_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.220880438" />
+                                                        <joint name="J11_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.220880438" damping="0.108597" />
                                                         
 
                                                         <site name="site1_S11_R6" pos="0.006306 0.003629 0.002869" size="0.000478 0.000478 0.000478"/>
@@ -2033,7 +2033,7 @@
 
                                                         <body name="segment_12_R6" pos="0 0 0.01155" euler="0 0 0">
                                                             <geom type="mesh" mesh="segment12N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                            <joint name="J12_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.205167602" />
+                                                            <joint name="J12_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.205167602" damping="0.099909" />
                                                             
 
                                                             <site name="site1_S12_R6" pos="0.005857 0.003371 0.002665" size="0.000444 0.000444 0.000444"/>
@@ -2045,7 +2045,7 @@
 
                                                             <body name="segment_13_R6" pos="0 0 0.01080" euler="0 0 0">
                                                                 <geom type="mesh" mesh="segment13N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                <joint name="J13_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.190572535" />
+                                                                <joint name="J13_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.190572535" damping="0.091917" />
                                                                 
 
                                                                 <site name="site1_S13_R6" pos="0.005441 0.003131 0.002475" size="0.000412 0.000412 0.000412"/>
@@ -2057,7 +2057,7 @@
 
                                                                 <body name="segment_14_R6" pos="0 0 0.01010" euler="0 0 0">
                                                                     <geom type="mesh" mesh="segment14N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                    <joint name="J14_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.177015721" />
+                                                                    <joint name="J14_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.177015721" damping="0.084563" />
                                                                     
 
                                                                     <site name="site1_S14_R6" pos="0.005054 0.002908 0.002299" size="0.000383 0.000383 0.000383"/>
@@ -2069,7 +2069,7 @@
 
                                                                     <body name="segment_15_R6" pos="0 0 0.00945" euler="0 0 0">
                                                                         <geom type="mesh" mesh="segment15N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                        <joint name="J15_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.164423302" />
+                                                                        <joint name="J15_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.164423302" damping="0.077798" />
                                                                         
 
                                                                         <site name="site1_S15_R6" pos="0.004694 0.002701 0.002135" size="0.000356 0.000356 0.000356"/>
@@ -2081,7 +2081,7 @@
 
                                                                         <body name="segment_16_R6" pos="0 0 0.00885" euler="0 0 0">
                                                                             <geom type="mesh" mesh="segment16N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                            <joint name="J16_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.152726674" />
+                                                                            <joint name="J16_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.152726674" damping="0.071574" />
                                                                             
 
                                                                             <site name="site1_S16_R6" pos="0.004360 0.002509 0.001983" size="0.000331 0.000331 0.000331"/>
@@ -2093,7 +2093,7 @@
 
                                                                             <body name="segment_17_R6" pos="0 0 0.00829" euler="0 0 0">
                                                                                 <geom type="mesh" mesh="segment17N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                <joint name="J17_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.141862112" />
+                                                                                <joint name="J17_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.141862112" damping="0.065848" />
                                                                                 
 
                                                                                 <site name="site1_S17_R6" pos="0.004050 0.002331 0.001842" size="0.000307 0.000307 0.000307"/>
@@ -2105,7 +2105,7 @@
 
                                                                                 <body name="segment_18_R6" pos="0 0 0.00777" euler="0 0 0">
                                                                                     <geom type="mesh" mesh="segment18N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                    <joint name="J18_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.131770426" />
+                                                                                    <joint name="J18_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.131770426" damping="0.060581" />
                                                                                     
 
                                                                                     <site name="site1_S18_R6" pos="0.003762 0.002165 0.001711" size="0.000285 0.000285 0.000285"/>
@@ -2117,7 +2117,7 @@
 
                                                                                     <body name="segment_19_R6" pos="0 0 0.00729" euler="0 0 0">
                                                                                         <geom type="mesh" mesh="segment19N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                        <joint name="J19_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.122396635" />
+                                                                                        <joint name="J19_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.122396635" damping="0.055734" />
                                                                                         
 
                                                                                         <site name="site1_S19_R6" pos="0.003494 0.002011 0.001590" size="0.000265 0.000265 0.000265"/>
@@ -2129,7 +2129,7 @@
 
                                                                                         <body name="segment_20_R6" pos="0 0 0.00684" euler="0 0 0">
                                                                                             <geom type="mesh" mesh="segment20N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                            <joint name="J20_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.113689670" />
+                                                                                            <joint name="J20_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.113689670" damping="0.051275" />
                                                                                             
 
                                                                                             <site name="site1_S20_R6" pos="0.003246 0.001868 0.001476" size="0.000246 0.000246 0.000246"/>
@@ -2141,7 +2141,7 @@
 
                                                                                             <body name="segment_21_R6" pos="0 0 0.00643" euler="0 0 0">
                                                                                                 <geom type="mesh" mesh="segment21N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                <joint name="J21_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.105602095" />
+                                                                                                <joint name="J21_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.105602095" damping="0.047173" />
                                                                                                 
 
                                                                                                 <site name="site1_S21_R6" pos="0.003015 0.001735 0.001371" size="0.000229 0.000229 0.000229"/>
@@ -2153,7 +2153,7 @@
 
                                                                                                 <body name="segment_22_R6" pos="0 0 0.00604" euler="0 0 0">
                                                                                                     <geom type="mesh" mesh="segment22N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                    <joint name="J22_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.098089848" />
+                                                                                                    <joint name="J22_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.098089848" damping="0.043399" />
                                                                                                     
 
                                                                                                     <site name="site1_S22_R6" pos="0.002800 0.001611 0.001274" size="0.000212 0.000212 0.000212"/>
@@ -2165,7 +2165,7 @@
 
                                                                                                     <body name="segment_23_R6" pos="0 0 0.00568" euler="0 0 0">
                                                                                                         <geom type="mesh" mesh="segment23N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                        <joint name="J23_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.091112002" />
+                                                                                                        <joint name="J23_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.091112002" damping="0.039928" />
                                                                                                         
 
                                                                                                         <site name="site1_S23_R6" pos="0.002601 0.001497 0.001183" size="0.000197 0.000197 0.000197"/>
@@ -2177,7 +2177,7 @@
 
                                                                                                         <body name="segment_24_R6" pos="0 0 0.00535" euler="0 0 0">
                                                                                                             <geom type="mesh" mesh="segment24N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                            <joint name="J24_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.084630541" />
+                                                                                                            <joint name="J24_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.084630541" damping="0.036733" />
                                                                                                             
 
                                                                                                             <site name="site1_S24_R6" pos="0.002416 0.001390 0.001099" size="0.000183 0.000183 0.000183"/>
@@ -2189,7 +2189,7 @@
 
                                                                                                             <body name="segment_25_R6" pos="0 0 0.00504" euler="0 0 0">
                                                                                                                 <geom type="mesh" mesh="segment25N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                                <joint name="J25_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.078610154" />
+                                                                                                                <joint name="J25_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.078610154" damping="0.033795" />
                                                                                                                 
 
                                                                                                                 <site name="site1_S25_R6" pos="0.002244 0.001291 0.001021" size="0.000170 0.000170 0.000170"/>
@@ -2201,7 +2201,7 @@
 
                                                                                                                 <body name="segment_26_R6" pos="0 0 0.00475" euler="0 0 0">
                                                                                                                     <geom type="mesh" mesh="segment26N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                                    <joint name="J26_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.073018040" />
+                                                                                                                    <joint name="J26_R6" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.073018040" damping="0.031091" />
                                                                                                                     
 
                                                                                                                     <site name="site1_S26_R6" pos="0.002085 0.001200 0.000948" size="0.000158 0.000158 0.000158"/>
@@ -2264,7 +2264,7 @@
 
             <body name="segment_1_R7" pos="0 0 0.00100" euler="0 0 0">
                 <geom type="mesh" mesh="segment1N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                <joint name="J1_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.462000000" />
+                <joint name="J1_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.462000000" damping="0.250000" />
                 
 
                 <site name="site1_S1_R7" pos="0.013190 0.007590 0.006000" size="0.001000 0.001000 0.001000"/>
@@ -2276,7 +2276,7 @@
 
                 <body name="segment_2_R7" pos="0 0 0.02306" euler="0 0 0">
                     <geom type="mesh" mesh="segment2N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                    <joint name="J2_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.429134572" />
+                    <joint name="J2_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.429134572" damping="0.230000" />
                     
 
                     <site name="site1_S2_R7" pos="0.012252 0.007050 0.005573" size="0.000929 0.000929 0.000929"/>
@@ -2288,7 +2288,7 @@
 
                     <body name="segment_3_R7" pos="0 0 0.02149" euler="0 0 0">
                         <geom type="mesh" mesh="segment3N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                        <joint name="J3_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.398607101" />
+                        <joint name="J3_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.398607101" damping="0.211600" />
                         
 
                         <site name="site1_S3_R7" pos="0.011380 0.006549 0.005177" size="0.000863 0.000863 0.000863"/>
@@ -2300,7 +2300,7 @@
 
                         <body name="segment_4_R7" pos="0 0 0.02003" euler="0 0 0">
                             <geom type="mesh" mesh="segment4N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                            <joint name="J4_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.370251272" />
+                            <joint name="J4_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.370251272" damping="0.194672" />
                             
 
                             <site name="site1_S4_R7" pos="0.010571 0.006083 0.004808" size="0.000801 0.000801 0.000801"/>
@@ -2312,7 +2312,7 @@
 
                             <body name="segment_5_R7" pos="0 0 0.01868" euler="0 0 0">
                                 <geom type="mesh" mesh="segment5N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                <joint name="J5_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.343912600" />
+                                <joint name="J5_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.343912600" damping="0.179098" />
                                 
 
                                 <site name="site1_S5_R7" pos="0.009819 0.005650 0.004466" size="0.000744 0.000744 0.000744"/>
@@ -2324,7 +2324,7 @@
 
                                 <body name="segment_6_R7" pos="0 0 0.01742" euler="0 0 0">
                                     <geom type="mesh" mesh="segment6N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                    <joint name="J6_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.319447589" />
+                                    <joint name="J6_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.319447589" damping="0.164770" />
                                     
 
                                     <site name="site1_S6_R7" pos="0.009120 0.005248 0.004149" size="0.000691 0.000691 0.000691"/>
@@ -2336,7 +2336,7 @@
 
                                     <body name="segment_7_R7" pos="0 0 0.01625" euler="0 0 0">
                                         <geom type="mesh" mesh="segment7N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                        <joint name="J7_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.296722953" />
+                                        <joint name="J7_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.296722953" damping="0.151589" />
                                         
 
                                         <site name="site1_S7_R7" pos="0.008471 0.004875 0.003854" size="0.000642 0.000642 0.000642"/>
@@ -2348,7 +2348,7 @@
 
                                         <body name="segment_8_R7" pos="0 0 0.01517" euler="0 0 0">
                                             <geom type="mesh" mesh="segment8N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                            <joint name="J8_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.275614886" />
+                                            <joint name="J8_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.275614886" damping="0.139462" />
                                             
 
                                             <site name="site1_S8_R7" pos="0.007869 0.004528 0.003579" size="0.000597 0.000597 0.000597"/>
@@ -2360,7 +2360,7 @@
 
                                             <body name="segment_9_R7" pos="0 0 0.01416" euler="0 0 0">
                                                 <geom type="mesh" mesh="segment9N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                <joint name="J9_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.256008390" />
+                                                <joint name="J9_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.256008390" damping="0.128305" />
                                                 
 
                                                 <site name="site1_S9_R7" pos="0.007309 0.004206 0.003325" size="0.000554 0.000554 0.000554"/>
@@ -2372,7 +2372,7 @@
 
                                                 <body name="segment_10_R7" pos="0 0 0.01322" euler="0 0 0">
                                                     <geom type="mesh" mesh="segment10N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                    <joint name="J10_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.237796647" />
+                                                    <joint name="J10_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.237796647" damping="0.118040" />
                                                     
 
                                                     <site name="site1_S10_R7" pos="0.006789 0.003907 0.003088" size="0.000515 0.000515 0.000515"/>
@@ -2384,7 +2384,7 @@
 
                                                     <body name="segment_11_R7" pos="0 0 0.01235" euler="0 0 0">
                                                         <geom type="mesh" mesh="segment11N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                        <joint name="J11_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.220880438" />
+                                                        <joint name="J11_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.220880438" damping="0.108597" />
                                                         
 
                                                         <site name="site1_S11_R7" pos="0.006306 0.003629 0.002869" size="0.000478 0.000478 0.000478"/>
@@ -2396,7 +2396,7 @@
 
                                                         <body name="segment_12_R7" pos="0 0 0.01155" euler="0 0 0">
                                                             <geom type="mesh" mesh="segment12N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                            <joint name="J12_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.205167602" />
+                                                            <joint name="J12_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.205167602" damping="0.099909" />
                                                             
 
                                                             <site name="site1_S12_R7" pos="0.005857 0.003371 0.002665" size="0.000444 0.000444 0.000444"/>
@@ -2408,7 +2408,7 @@
 
                                                             <body name="segment_13_R7" pos="0 0 0.01080" euler="0 0 0">
                                                                 <geom type="mesh" mesh="segment13N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                <joint name="J13_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.190572535" />
+                                                                <joint name="J13_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.190572535" damping="0.091917" />
                                                                 
 
                                                                 <site name="site1_S13_R7" pos="0.005441 0.003131 0.002475" size="0.000412 0.000412 0.000412"/>
@@ -2420,7 +2420,7 @@
 
                                                                 <body name="segment_14_R7" pos="0 0 0.01010" euler="0 0 0">
                                                                     <geom type="mesh" mesh="segment14N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                    <joint name="J14_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.177015721" />
+                                                                    <joint name="J14_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.177015721" damping="0.084563" />
                                                                     
 
                                                                     <site name="site1_S14_R7" pos="0.005054 0.002908 0.002299" size="0.000383 0.000383 0.000383"/>
@@ -2432,7 +2432,7 @@
 
                                                                     <body name="segment_15_R7" pos="0 0 0.00945" euler="0 0 0">
                                                                         <geom type="mesh" mesh="segment15N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                        <joint name="J15_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.164423302" />
+                                                                        <joint name="J15_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.164423302" damping="0.077798" />
                                                                         
 
                                                                         <site name="site1_S15_R7" pos="0.004694 0.002701 0.002135" size="0.000356 0.000356 0.000356"/>
@@ -2444,7 +2444,7 @@
 
                                                                         <body name="segment_16_R7" pos="0 0 0.00885" euler="0 0 0">
                                                                             <geom type="mesh" mesh="segment16N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                            <joint name="J16_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.152726674" />
+                                                                            <joint name="J16_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.152726674" damping="0.071574" />
                                                                             
 
                                                                             <site name="site1_S16_R7" pos="0.004360 0.002509 0.001983" size="0.000331 0.000331 0.000331"/>
@@ -2456,7 +2456,7 @@
 
                                                                             <body name="segment_17_R7" pos="0 0 0.00829" euler="0 0 0">
                                                                                 <geom type="mesh" mesh="segment17N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                <joint name="J17_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.141862112" />
+                                                                                <joint name="J17_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.141862112" damping="0.065848" />
                                                                                 
 
                                                                                 <site name="site1_S17_R7" pos="0.004050 0.002331 0.001842" size="0.000307 0.000307 0.000307"/>
@@ -2468,7 +2468,7 @@
 
                                                                                 <body name="segment_18_R7" pos="0 0 0.00777" euler="0 0 0">
                                                                                     <geom type="mesh" mesh="segment18N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                    <joint name="J18_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.131770426" />
+                                                                                    <joint name="J18_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.131770426" damping="0.060581" />
                                                                                     
 
                                                                                     <site name="site1_S18_R7" pos="0.003762 0.002165 0.001711" size="0.000285 0.000285 0.000285"/>
@@ -2480,7 +2480,7 @@
 
                                                                                     <body name="segment_19_R7" pos="0 0 0.00729" euler="0 0 0">
                                                                                         <geom type="mesh" mesh="segment19N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                        <joint name="J19_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.122396635" />
+                                                                                        <joint name="J19_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.122396635" damping="0.055734" />
                                                                                         
 
                                                                                         <site name="site1_S19_R7" pos="0.003494 0.002011 0.001590" size="0.000265 0.000265 0.000265"/>
@@ -2492,7 +2492,7 @@
 
                                                                                         <body name="segment_20_R7" pos="0 0 0.00684" euler="0 0 0">
                                                                                             <geom type="mesh" mesh="segment20N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                            <joint name="J20_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.113689670" />
+                                                                                            <joint name="J20_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.113689670" damping="0.051275" />
                                                                                             
 
                                                                                             <site name="site1_S20_R7" pos="0.003246 0.001868 0.001476" size="0.000246 0.000246 0.000246"/>
@@ -2504,7 +2504,7 @@
 
                                                                                             <body name="segment_21_R7" pos="0 0 0.00643" euler="0 0 0">
                                                                                                 <geom type="mesh" mesh="segment21N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                <joint name="J21_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.105602095" />
+                                                                                                <joint name="J21_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.105602095" damping="0.047173" />
                                                                                                 
 
                                                                                                 <site name="site1_S21_R7" pos="0.003015 0.001735 0.001371" size="0.000229 0.000229 0.000229"/>
@@ -2516,7 +2516,7 @@
 
                                                                                                 <body name="segment_22_R7" pos="0 0 0.00604" euler="0 0 0">
                                                                                                     <geom type="mesh" mesh="segment22N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                    <joint name="J22_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.098089848" />
+                                                                                                    <joint name="J22_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.098089848" damping="0.043399" />
                                                                                                     
 
                                                                                                     <site name="site1_S22_R7" pos="0.002800 0.001611 0.001274" size="0.000212 0.000212 0.000212"/>
@@ -2528,7 +2528,7 @@
 
                                                                                                     <body name="segment_23_R7" pos="0 0 0.00568" euler="0 0 0">
                                                                                                         <geom type="mesh" mesh="segment23N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                        <joint name="J23_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.091112002" />
+                                                                                                        <joint name="J23_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.091112002" damping="0.039928" />
                                                                                                         
 
                                                                                                         <site name="site1_S23_R7" pos="0.002601 0.001497 0.001183" size="0.000197 0.000197 0.000197"/>
@@ -2540,7 +2540,7 @@
 
                                                                                                         <body name="segment_24_R7" pos="0 0 0.00535" euler="0 0 0">
                                                                                                             <geom type="mesh" mesh="segment24N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                            <joint name="J24_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.084630541" />
+                                                                                                            <joint name="J24_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.084630541" damping="0.036733" />
                                                                                                             
 
                                                                                                             <site name="site1_S24_R7" pos="0.002416 0.001390 0.001099" size="0.000183 0.000183 0.000183"/>
@@ -2552,7 +2552,7 @@
 
                                                                                                             <body name="segment_25_R7" pos="0 0 0.00504" euler="0 0 0">
                                                                                                                 <geom type="mesh" mesh="segment25N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                                <joint name="J25_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.078610154" />
+                                                                                                                <joint name="J25_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.078610154" damping="0.033795" />
                                                                                                                 
 
                                                                                                                 <site name="site1_S25_R7" pos="0.002244 0.001291 0.001021" size="0.000170 0.000170 0.000170"/>
@@ -2564,7 +2564,7 @@
 
                                                                                                                 <body name="segment_26_R7" pos="0 0 0.00475" euler="0 0 0">
                                                                                                                     <geom type="mesh" mesh="segment26N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                                    <joint name="J26_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.073018040" />
+                                                                                                                    <joint name="J26_R7" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.073018040" damping="0.031091" />
                                                                                                                     
 
                                                                                                                     <site name="site1_S26_R7" pos="0.002085 0.001200 0.000948" size="0.000158 0.000158 0.000158"/>
@@ -2631,7 +2631,7 @@
 
             <body name="segment_1_R8" pos="0 0 0.00100" euler="0 0 0">
                 <geom type="mesh" mesh="segment1N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                <joint name="J1_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.462000000" />
+                <joint name="J1_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.462000000" damping="0.250000" />
                 
 
                 <site name="site1_S1_R8" pos="0.013190 0.007590 0.006000" size="0.001000 0.001000 0.001000"/>
@@ -2643,7 +2643,7 @@
 
                 <body name="segment_2_R8" pos="0 0 0.02306" euler="0 0 0">
                     <geom type="mesh" mesh="segment2N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                    <joint name="J2_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.429134572" />
+                    <joint name="J2_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.429134572" damping="0.230000" />
                     
 
                     <site name="site1_S2_R8" pos="0.012252 0.007050 0.005573" size="0.000929 0.000929 0.000929"/>
@@ -2655,7 +2655,7 @@
 
                     <body name="segment_3_R8" pos="0 0 0.02149" euler="0 0 0">
                         <geom type="mesh" mesh="segment3N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                        <joint name="J3_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.398607101" />
+                        <joint name="J3_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.398607101" damping="0.211600" />
                         
 
                         <site name="site1_S3_R8" pos="0.011380 0.006549 0.005177" size="0.000863 0.000863 0.000863"/>
@@ -2667,7 +2667,7 @@
 
                         <body name="segment_4_R8" pos="0 0 0.02003" euler="0 0 0">
                             <geom type="mesh" mesh="segment4N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                            <joint name="J4_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.370251272" />
+                            <joint name="J4_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.370251272" damping="0.194672" />
                             
 
                             <site name="site1_S4_R8" pos="0.010571 0.006083 0.004808" size="0.000801 0.000801 0.000801"/>
@@ -2679,7 +2679,7 @@
 
                             <body name="segment_5_R8" pos="0 0 0.01868" euler="0 0 0">
                                 <geom type="mesh" mesh="segment5N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                <joint name="J5_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.343912600" />
+                                <joint name="J5_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.343912600" damping="0.179098" />
                                 
 
                                 <site name="site1_S5_R8" pos="0.009819 0.005650 0.004466" size="0.000744 0.000744 0.000744"/>
@@ -2691,7 +2691,7 @@
 
                                 <body name="segment_6_R8" pos="0 0 0.01742" euler="0 0 0">
                                     <geom type="mesh" mesh="segment6N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                    <joint name="J6_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.319447589" />
+                                    <joint name="J6_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.319447589" damping="0.164770" />
                                     
 
                                     <site name="site1_S6_R8" pos="0.009120 0.005248 0.004149" size="0.000691 0.000691 0.000691"/>
@@ -2703,7 +2703,7 @@
 
                                     <body name="segment_7_R8" pos="0 0 0.01625" euler="0 0 0">
                                         <geom type="mesh" mesh="segment7N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                        <joint name="J7_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.296722953" />
+                                        <joint name="J7_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.296722953" damping="0.151589" />
                                         
 
                                         <site name="site1_S7_R8" pos="0.008471 0.004875 0.003854" size="0.000642 0.000642 0.000642"/>
@@ -2715,7 +2715,7 @@
 
                                         <body name="segment_8_R8" pos="0 0 0.01517" euler="0 0 0">
                                             <geom type="mesh" mesh="segment8N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                            <joint name="J8_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.275614886" />
+                                            <joint name="J8_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.275614886" damping="0.139462" />
                                             
 
                                             <site name="site1_S8_R8" pos="0.007869 0.004528 0.003579" size="0.000597 0.000597 0.000597"/>
@@ -2727,7 +2727,7 @@
 
                                             <body name="segment_9_R8" pos="0 0 0.01416" euler="0 0 0">
                                                 <geom type="mesh" mesh="segment9N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                <joint name="J9_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.256008390" />
+                                                <joint name="J9_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.256008390" damping="0.128305" />
                                                 
 
                                                 <site name="site1_S9_R8" pos="0.007309 0.004206 0.003325" size="0.000554 0.000554 0.000554"/>
@@ -2739,7 +2739,7 @@
 
                                                 <body name="segment_10_R8" pos="0 0 0.01322" euler="0 0 0">
                                                     <geom type="mesh" mesh="segment10N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                    <joint name="J10_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.237796647" />
+                                                    <joint name="J10_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.237796647" damping="0.118040" />
                                                     
 
                                                     <site name="site1_S10_R8" pos="0.006789 0.003907 0.003088" size="0.000515 0.000515 0.000515"/>
@@ -2751,7 +2751,7 @@
 
                                                     <body name="segment_11_R8" pos="0 0 0.01235" euler="0 0 0">
                                                         <geom type="mesh" mesh="segment11N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                        <joint name="J11_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.220880438" />
+                                                        <joint name="J11_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.220880438" damping="0.108597" />
                                                         
 
                                                         <site name="site1_S11_R8" pos="0.006306 0.003629 0.002869" size="0.000478 0.000478 0.000478"/>
@@ -2763,7 +2763,7 @@
 
                                                         <body name="segment_12_R8" pos="0 0 0.01155" euler="0 0 0">
                                                             <geom type="mesh" mesh="segment12N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                            <joint name="J12_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.205167602" />
+                                                            <joint name="J12_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.205167602" damping="0.099909" />
                                                             
 
                                                             <site name="site1_S12_R8" pos="0.005857 0.003371 0.002665" size="0.000444 0.000444 0.000444"/>
@@ -2775,7 +2775,7 @@
 
                                                             <body name="segment_13_R8" pos="0 0 0.01080" euler="0 0 0">
                                                                 <geom type="mesh" mesh="segment13N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                <joint name="J13_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.190572535" />
+                                                                <joint name="J13_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.190572535" damping="0.091917" />
                                                                 
 
                                                                 <site name="site1_S13_R8" pos="0.005441 0.003131 0.002475" size="0.000412 0.000412 0.000412"/>
@@ -2787,7 +2787,7 @@
 
                                                                 <body name="segment_14_R8" pos="0 0 0.01010" euler="0 0 0">
                                                                     <geom type="mesh" mesh="segment14N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                    <joint name="J14_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.177015721" />
+                                                                    <joint name="J14_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.177015721" damping="0.084563" />
                                                                     
 
                                                                     <site name="site1_S14_R8" pos="0.005054 0.002908 0.002299" size="0.000383 0.000383 0.000383"/>
@@ -2799,7 +2799,7 @@
 
                                                                     <body name="segment_15_R8" pos="0 0 0.00945" euler="0 0 0">
                                                                         <geom type="mesh" mesh="segment15N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                        <joint name="J15_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.164423302" />
+                                                                        <joint name="J15_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.164423302" damping="0.077798" />
                                                                         
 
                                                                         <site name="site1_S15_R8" pos="0.004694 0.002701 0.002135" size="0.000356 0.000356 0.000356"/>
@@ -2811,7 +2811,7 @@
 
                                                                         <body name="segment_16_R8" pos="0 0 0.00885" euler="0 0 0">
                                                                             <geom type="mesh" mesh="segment16N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                            <joint name="J16_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.152726674" />
+                                                                            <joint name="J16_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.152726674" damping="0.071574" />
                                                                             
 
                                                                             <site name="site1_S16_R8" pos="0.004360 0.002509 0.001983" size="0.000331 0.000331 0.000331"/>
@@ -2823,7 +2823,7 @@
 
                                                                             <body name="segment_17_R8" pos="0 0 0.00829" euler="0 0 0">
                                                                                 <geom type="mesh" mesh="segment17N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                <joint name="J17_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.141862112" />
+                                                                                <joint name="J17_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.141862112" damping="0.065848" />
                                                                                 
 
                                                                                 <site name="site1_S17_R8" pos="0.004050 0.002331 0.001842" size="0.000307 0.000307 0.000307"/>
@@ -2835,7 +2835,7 @@
 
                                                                                 <body name="segment_18_R8" pos="0 0 0.00777" euler="0 0 0">
                                                                                     <geom type="mesh" mesh="segment18N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                    <joint name="J18_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.131770426" />
+                                                                                    <joint name="J18_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.131770426" damping="0.060581" />
                                                                                     
 
                                                                                     <site name="site1_S18_R8" pos="0.003762 0.002165 0.001711" size="0.000285 0.000285 0.000285"/>
@@ -2847,7 +2847,7 @@
 
                                                                                     <body name="segment_19_R8" pos="0 0 0.00729" euler="0 0 0">
                                                                                         <geom type="mesh" mesh="segment19N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                        <joint name="J19_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.122396635" />
+                                                                                        <joint name="J19_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.122396635" damping="0.055734" />
                                                                                         
 
                                                                                         <site name="site1_S19_R8" pos="0.003494 0.002011 0.001590" size="0.000265 0.000265 0.000265"/>
@@ -2859,7 +2859,7 @@
 
                                                                                         <body name="segment_20_R8" pos="0 0 0.00684" euler="0 0 0">
                                                                                             <geom type="mesh" mesh="segment20N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                            <joint name="J20_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.113689670" />
+                                                                                            <joint name="J20_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.113689670" damping="0.051275" />
                                                                                             
 
                                                                                             <site name="site1_S20_R8" pos="0.003246 0.001868 0.001476" size="0.000246 0.000246 0.000246"/>
@@ -2871,7 +2871,7 @@
 
                                                                                             <body name="segment_21_R8" pos="0 0 0.00643" euler="0 0 0">
                                                                                                 <geom type="mesh" mesh="segment21N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                <joint name="J21_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.105602095" />
+                                                                                                <joint name="J21_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.105602095" damping="0.047173" />
                                                                                                 
 
                                                                                                 <site name="site1_S21_R8" pos="0.003015 0.001735 0.001371" size="0.000229 0.000229 0.000229"/>
@@ -2883,7 +2883,7 @@
 
                                                                                                 <body name="segment_22_R8" pos="0 0 0.00604" euler="0 0 0">
                                                                                                     <geom type="mesh" mesh="segment22N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                    <joint name="J22_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.098089848" />
+                                                                                                    <joint name="J22_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.098089848" damping="0.043399" />
                                                                                                     
 
                                                                                                     <site name="site1_S22_R8" pos="0.002800 0.001611 0.001274" size="0.000212 0.000212 0.000212"/>
@@ -2895,7 +2895,7 @@
 
                                                                                                     <body name="segment_23_R8" pos="0 0 0.00568" euler="0 0 0">
                                                                                                         <geom type="mesh" mesh="segment23N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                        <joint name="J23_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.091112002" />
+                                                                                                        <joint name="J23_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.091112002" damping="0.039928" />
                                                                                                         
 
                                                                                                         <site name="site1_S23_R8" pos="0.002601 0.001497 0.001183" size="0.000197 0.000197 0.000197"/>
@@ -2907,7 +2907,7 @@
 
                                                                                                         <body name="segment_24_R8" pos="0 0 0.00535" euler="0 0 0">
                                                                                                             <geom type="mesh" mesh="segment24N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                            <joint name="J24_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.084630541" />
+                                                                                                            <joint name="J24_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.084630541" damping="0.036733" />
                                                                                                             
 
                                                                                                             <site name="site1_S24_R8" pos="0.002416 0.001390 0.001099" size="0.000183 0.000183 0.000183"/>
@@ -2919,7 +2919,7 @@
 
                                                                                                             <body name="segment_25_R8" pos="0 0 0.00504" euler="0 0 0">
                                                                                                                 <geom type="mesh" mesh="segment25N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                                <joint name="J25_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.078610154" />
+                                                                                                                <joint name="J25_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.078610154" damping="0.033795" />
                                                                                                                 
 
                                                                                                                 <site name="site1_S25_R8" pos="0.002244 0.001291 0.001021" size="0.000170 0.000170 0.000170"/>
@@ -2931,7 +2931,7 @@
 
                                                                                                                 <body name="segment_26_R8" pos="0 0 0.00475" euler="0 0 0">
                                                                                                                     <geom type="mesh" mesh="segment26N_mesh" rgba="1 1 1 1" density="1000" friction="1 0.1 0.01"/>
-                                                                                                                    <joint name="J26_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.073018040" />
+                                                                                                                    <joint name="J26_R8" pos="0 0 0" axis="1 0 0" type="ball" stiffness="0.073018040" damping="0.031091" />
                                                                                                                     
 
                                                                                                                     <site name="site1_S26_R8" pos="0.002085 0.001200 0.000948" size="0.000158 0.000158 0.000158"/>
