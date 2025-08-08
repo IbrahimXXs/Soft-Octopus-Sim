@@ -7,10 +7,22 @@ import mujoco
 import re
 from collections import defaultdict
 
+from PyQt5.QtWidgets import QPushButton, QLineEdit
+from PyQt5.QtCore import QTimer, QTime
+import time
+
 
 class ActuatorControlGUI(QWidget):
     def __init__(self, model, data):
         super().__init__()
+        self.recording = []  # List of (timestamp, {actuator_idx: value})
+        self.is_recording = False
+        self.is_looping = False
+        self.playback_timer = QTimer()
+        self.loop_wait_timer = QTimer()
+        self.playback_start_time = None
+        self.loop_delay_seconds = 1.0
+
         self.model = model
         self.data = data
         self.setWindowTitle("Octopus Actuator Controller")
@@ -149,6 +161,31 @@ class ActuatorControlGUI(QWidget):
         slider_row.addWidget(self.full_control_slider)
         full_layout.addLayout(slider_row)
 
+        # === Recording and Playback Controls ===
+        button_row = QHBoxLayout()
+
+        self.record_button = QPushButton("Record")
+        self.stop_button = QPushButton("Stop Recording")
+        self.play_button = QPushButton("Play Recorded")
+        self.loop_button = QPushButton("Loop: OFF")
+        self.loop_wait_input = QLineEdit("1.0")
+        self.loop_wait_input.setFixedWidth(50)
+
+        self.record_button.clicked.connect(self.start_recording)
+        self.stop_button.clicked.connect(self.stop_recording)
+        self.play_button.clicked.connect(self.play_recording)
+        self.loop_button.clicked.connect(self.toggle_loop)
+
+        button_row.addWidget(self.record_button)
+        button_row.addWidget(self.stop_button)
+        button_row.addWidget(self.play_button)
+        button_row.addWidget(self.loop_button)
+        button_row.addWidget(QLabel("Loop Wait (s):"))
+        button_row.addWidget(self.loop_wait_input)
+
+        full_layout.addLayout(button_row)
+
+
         full_tab.setLayout(full_layout)
         scroll_full = QScrollArea()
         scroll_full.setWidget(full_tab)
@@ -184,3 +221,72 @@ class ActuatorControlGUI(QWidget):
             slider.blockSignals(True)
             slider.setValue(int(self.data.ctrl[idx] * 1000))
             slider.blockSignals(False)
+
+
+    def start_recording(self):
+        self.recording = []
+        self.is_recording = True
+        self.record_start_time = time.time()
+        self._record_snapshot()
+        self.record_timer = QTimer()
+        self.record_timer.timeout.connect(self._record_snapshot)
+        self.record_timer.start(50)  # Record every 50ms
+
+    def _record_snapshot(self):
+        if not self.is_recording:
+            return
+        timestamp = time.time() - self.record_start_time
+        snapshot = {idx: self.data.ctrl[idx] for idx in range(self.model.nu)}
+        self.recording.append((timestamp, snapshot))
+
+    def stop_recording(self):
+        if self.is_recording:
+            self.record_timer.stop()
+            self.is_recording = False
+            print(f"Recorded {len(self.recording)} snapshots")
+
+    def play_recording(self):
+        if not self.recording:
+            print("No recording to play.")
+            return
+
+        self.playback_start_time = time.time()
+        self.playback_index = 0
+
+        # Disconnect existing connections to prevent stacking them
+        try:
+            self.playback_timer.timeout.disconnect()
+        except TypeError:
+            pass  # No existing connection, safe to proceed
+
+        self.playback_timer.timeout.connect(self._playback_step)
+        self.playback_timer.start(10)
+
+
+    def _playback_step(self):
+        if self.playback_index >= len(self.recording):
+            self.playback_timer.stop()
+            if self.is_looping:
+                try:
+                    self.loop_delay_seconds = float(self.loop_wait_input.text())
+                except ValueError:
+                    self.loop_delay_seconds = 1.0
+                self.loop_wait_timer.singleShot(int(self.loop_delay_seconds * 1000), self.play_recording)
+            return
+
+        now = time.time() - self.playback_start_time
+        while (self.playback_index < len(self.recording) and 
+            self.recording[self.playback_index][0] <= now):
+            _, snapshot = self.recording[self.playback_index]
+            for idx, val in snapshot.items():
+                self.data.ctrl[idx] = val
+                if idx in self.sliders:
+                    slider_value = int(val * 1000)
+                    self.sliders[idx].blockSignals(True)
+                    self.sliders[idx].setValue(slider_value)
+                    self.sliders[idx].blockSignals(False)
+            self.playback_index += 1
+
+    def toggle_loop(self):
+        self.is_looping = not self.is_looping
+        self.loop_button.setText(f"Loop: {'ON' if self.is_looping else 'OFF'}")
