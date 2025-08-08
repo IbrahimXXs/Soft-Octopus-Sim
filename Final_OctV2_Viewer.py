@@ -2,15 +2,27 @@ import mujoco
 import mujoco_viewer
 import time
 
-# Load model
+# Enable or disable the GUI monitor
+USE_MONITOR = False                       # ON or OFF for Data Logging
+
+if USE_MONITOR:
+    from State_Info.State_Info import OctopusMonitor
+
+# Load model and data
 model = mujoco.MjModel.from_xml_path('Final_OctopusV2.xml')
 data = mujoco.MjData(model)
-ctrl = data.ctrl
 viewer = mujoco_viewer.MujocoViewer(model, data)
 
+# Only create monitor if enabled
+monitor = OctopusMonitor(model, data) if USE_MONITOR else None
+
 while viewer.is_alive:
-    # Set controls to zero (or constant value if you want to see a specific activation)
- 
+    data.ctrl[:] = 0
+
     mujoco.mj_step(model, data)
     viewer.render()
-    time.sleep(0.01)  # slow down for human viewing
+
+    if monitor:
+        monitor.update()
+
+    time.sleep(0.01)

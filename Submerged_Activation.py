@@ -1,13 +1,23 @@
 import mujoco
 import mujoco_viewer
 import time
+import numpy as np
 
-# Load model and data
+# === Optional GUI Monitor Toggle ===
+USE_MONITOR = False  # <<< Turn GUI monitor ON or OFF here
+
+if USE_MONITOR:
+    from State_Info.State_Info import OctopusMonitor
+
+# === Load model and data ===
 model = mujoco.MjModel.from_xml_path('/home/ibrahim/Documents/Octopus/Octopus Repo/Final_OctopusV2_Submerged.xml')
 data = mujoco.MjData(model)
 viewer = mujoco_viewer.MujocoViewer(model, data)
 
-# Dynamically generate actuator names
+# === Optional GUI Monitor Initialization ===
+monitor = OctopusMonitor(model, data) if USE_MONITOR else None
+
+# === Generate actuator names ===
 def generate_group1_names():
     names = []
     for r in range(1, 9):  # R1 to R8
@@ -30,11 +40,10 @@ def print_sim_status():
     head_pos = data.xpos[head_id]
     print(f"Head Pos: x={head_pos[0]:.3f}, y={head_pos[1]:.3f}, z={head_pos[2]:.3f}")
 
-
 group1_names = generate_group1_names()
 group2_names = generate_group2_names()
 
-# Resolve actuator IDs
+# === Resolve actuator IDs ===
 def get_ids(names):
     ids = []
     for name in names:
@@ -48,7 +57,7 @@ def get_ids(names):
 group1_ids = get_ids(group1_names)
 group2_ids = get_ids(group2_names)
 
-# Helper to linearly ramp activation
+# === Helpers ===
 def ramp_actuators(act_ids, start_val, end_val, duration, timestep=0.01):
     steps = int(duration / timestep)
     for step in range(steps):
@@ -59,9 +68,10 @@ def ramp_actuators(act_ids, start_val, end_val, duration, timestep=0.01):
         mujoco.mj_step(model, data)
         print_sim_status()
         viewer.render()
+        if monitor:
+            monitor.update()
         time.sleep(timestep)
 
-# Helper to set activation and hold
 def hold_actuators(act_ids, value, duration, timestep=0.01):
     for _ in range(int(duration / timestep)):
         for aid in act_ids:
@@ -69,9 +79,11 @@ def hold_actuators(act_ids, value, duration, timestep=0.01):
         mujoco.mj_step(model, data)
         print_sim_status()
         viewer.render()
+        if monitor:
+            monitor.update()
         time.sleep(timestep)
 
-# Main control loop
+# === Main Control Loop ===
 while viewer.is_alive:
     # Phase 1: Ramp group1 from 0 to 1 in 10s
     ramp_actuators(group1_ids, 0.0, 1.0, 10.0)
@@ -85,7 +97,7 @@ while viewer.is_alive:
     # Phase 4: Ramp group2 from 0 to 1 in 0.1s
     ramp_actuators(group2_ids, 0.0, 1.0, 0.1)
 
-    # Phase 5: Hold group2 at 1 for 5s
+    # Phase 5: Hold group2 at 1 for 1s
     hold_actuators(group2_ids, 1.0, 1.0)
 
     # Phase 6: Release group2 to 0
